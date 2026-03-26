@@ -93,3 +93,4 @@ uploads/
 # Git safety (prevent mistakes)
 # ================================
 .gitmodules
+.vercel
