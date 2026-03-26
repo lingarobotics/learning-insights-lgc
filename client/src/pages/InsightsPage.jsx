@@ -7,6 +7,7 @@ function InsightsPage() {
 
   const [insights, setInsights] = useState([]);
   const [selected, setSelected] = useState(null);
+  const [zoomImage, setZoomImage] = useState(null);
 
   const sectionRefs = useRef([]);
   const progressRef = useRef(null);
@@ -19,7 +20,7 @@ function InsightsPage() {
       .catch((err) => console.error(err));
   }, [name]);
 
-  // Scroll reveal
+  // 🔥 Scroll reveal (kept intact)
   useEffect(() => {
     if (!selected) return;
 
@@ -39,7 +40,7 @@ function InsightsPage() {
     return () => observer.disconnect();
   }, [selected]);
 
-  // Progress bar (React-safe)
+  // Progress bar
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -57,16 +58,17 @@ function InsightsPage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Split sections
+  // 🔥 SAFE SPLIT (IMPORTANT FIX)
   const getSections = (content) => {
     if (!content) return [];
-    const parts = content.split("\n## ");
-    return parts.map((part, index) =>
-      index === 0 ? part : "## " + part
-    );
+
+    // preserves markdown structure
+    const parts = content.split(/(?=\n## )/g);
+
+    return parts;
   };
 
-  // Format date → DD-MM-YYYY
+  // Format date
   const formatDate = (title) => {
     const match = title?.match(/\d{4}-\d{2}-\d{2}/);
     if (!match) return null;
@@ -107,7 +109,7 @@ function InsightsPage() {
       {selected && (
         <div className="insight-wrapper">
 
-          {/* DATE (safe + non-overlapping) */}
+          {/* DATE */}
           {formatDate(selected.title) && (
             <div className="floating-date">
               <span>On {formatDate(selected.title)}</span>
@@ -124,7 +126,32 @@ function InsightsPage() {
                   idx % 2 === 0 ? "left" : "right"
                 }`}
               >
-                <ReactMarkdown>{section}</ReactMarkdown>
+                <ReactMarkdown
+                  components={{
+                    img: ({ node, ...props }) => {
+                      let src = props.src || "";
+
+                      // normalize path
+                      if (!src.startsWith("/")) {
+                        src = "/" + src;
+                      }
+
+                      return (
+                        <img
+                          src={src}
+                          alt={props.alt || "image"}
+                          className="insight-image"
+                          onClick={() => setZoomImage(src)}
+                          onError={() => {
+                            console.error("Image failed:", src);
+                          }}
+                        />
+                      );
+                    },
+                  }}
+                >
+                  {section}
+                </ReactMarkdown>
               </div>
             ))}
           </div>
@@ -138,6 +165,20 @@ function InsightsPage() {
               ← Back
             </button>
           </div>
+        </div>
+      )}
+
+      {/* 🔥 ZOOM MODAL */}
+      {zoomImage && (
+        <div
+          className="zoom-overlay"
+          onClick={() => setZoomImage(null)}
+        >
+          <img
+            src={zoomImage}
+            alt="zoom"
+            className="zoom-image"
+          />
         </div>
       )}
     </div>

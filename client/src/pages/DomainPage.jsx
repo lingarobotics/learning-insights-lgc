@@ -21,7 +21,7 @@ const domainInfo = {
     title: "Projects",
     desc: "Extract real lessons from building systems.",
   },
-  "Failures-and-fixes": {
+  "failures-and-fixes": {
     title: "Failures & Fixes",
     desc: "Understand why things break and how to fix them.",
   },
