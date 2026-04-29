@@ -24,7 +24,7 @@ function App() {
 
   // 🔥 STEP 2: ACTUAL APP LOADS
   return (
-    <BrowserRouter>
+    <BrowserRouter>07
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/domain/:name" element={<DomainPage />} />

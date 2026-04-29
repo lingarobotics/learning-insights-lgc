@@ -29,6 +29,10 @@ const domainInfo = {
     title: "Professional Communication",
     desc: "Improve clarity in thinking and expression.",
   },
+  dbms: {
+    title: "DBMS",
+    desc: "Understand how data is stored, queried, and managed.",
+  }
 };
 
 function DomainPage() {

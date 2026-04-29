@@ -10,7 +10,8 @@ function Home() {
     { name: "dsa", label: "Data Structures & Algorithms", desc: "Problem solving & patterns" },
     { name: "projects", label: "Projects", desc: "System-level insights" },
     { name: "failures-and-fixes", label: "Failures and Fixes", desc: "Real debugging lessons" },
-    { name: "communication", label: "Professional Communication", desc: "Clarity in expression" }
+    { name: "communication", label: "Professional Communication", desc: "Clarity in expression" },
+    { name: "dbms", label: "DBMS", desc: "Data storage, querying, management" },
   ];
 
   return (
