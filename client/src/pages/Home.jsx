@@ -11,7 +11,20 @@ function Home() {
     { name: "projects", label: "Projects", desc: "System-level insights" },
     { name: "failures-and-fixes", label: "Failures and Fixes", desc: "Real debugging lessons" },
     { name: "communication", label: "Professional Communication", desc: "Clarity in expression" },
-    { name: "dbms", label: "DBMS", desc: "Data storage, querying, management" },
+
+    // 🔥 Updated
+    { 
+      name: "dbms", 
+      label: "DBMS", 
+      desc: "Relational data systems, constraints, normalization, and how structure enforces data integrity" 
+    },
+
+    // 🔥 Updated
+    { 
+      name: "nosql", 
+      label: "NoSQL", 
+      desc: "Distributed databases, CAP theorem, and choosing data models based on system trade-offs" 
+    }
   ];
 
   return (

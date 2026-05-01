@@ -31,7 +31,11 @@ const domainInfo = {
   },
   dbms: {
     title: "DBMS",
-    desc: "Understand how data is stored, queried, and managed.",
+    desc: "Understand relational data systems, constraints, normalization, and how structure enforces data integrity.",
+  },
+  nosql: {
+    title: "NoSQL",
+    desc: "Explore distributed databases, CAP theorem, and how to choose data models based on system requirements and trade-offs.",
   }
 };
 
