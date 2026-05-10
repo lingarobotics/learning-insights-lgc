@@ -19,8 +19,11 @@ function Home() {
 
           <div>
             <h1 className="landing-title">
-              Learning Insights — Learn With Linga
+              Learn With Linga — Engineering Insights
             </h1>
+            <p className="landing-version">
+              Version 1.0
+            </p>
 
             <p className="landing-sub">
               Not tutorials. Not notes.
