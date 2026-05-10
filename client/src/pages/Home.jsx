@@ -11,7 +11,8 @@ function Home() {
     { name: "projects", label: "Projects", desc: "System-level insights" },
     { name: "failures-and-fixes", label: "Failures and Fixes", desc: "Real debugging lessons" },
     { name: "communication", label: "Professional Communication", desc: "Clarity in expression" },
-
+    
+    
     // 🔥 Updated
     { 
       name: "dbms", 
@@ -24,7 +25,10 @@ function Home() {
       name: "nosql", 
       label: "NoSQL", 
       desc: "Distributed databases, CAP theorem, and choosing data models based on system trade-offs" 
-    }
+    },
+
+      // New Domain
+    { name: "reasons-behind-thoughts", label: "Reasons Behind Thoughts", desc: "Explore the reasoning, system experiences, debugging journeys, and engineering realizations that shaped each thought and perspective." },
   ];
 
   return (
