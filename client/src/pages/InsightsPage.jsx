@@ -1,9 +1,10 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 
 function InsightsPage() {
   const { name } = useParams();
+  const navigate = useNavigate();
 
   const [insights, setInsights] = useState([]);
   const [selected, setSelected] = useState(null);
@@ -20,7 +21,7 @@ function InsightsPage() {
       .catch((err) => console.error(err));
   }, [name]);
 
-  // 🔥 Scroll reveal (kept intact)
+  // Scroll reveal
   useEffect(() => {
     if (!selected) return;
 
@@ -44,8 +45,10 @@ function InsightsPage() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
+
       const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
+        document.documentElement.scrollHeight -
+        window.innerHeight;
 
       const progress = (scrollTop / docHeight) * 100;
 
@@ -55,54 +58,102 @@ function InsightsPage() {
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 🔥 SAFE SPLIT (IMPORTANT FIX)
+  // Split sections
   const getSections = (content) => {
     if (!content) return [];
 
-    // preserves markdown structure
-    const parts = content.split(/(?=\n## )/g);
-
-    return parts;
+    return content.split(/(?=\n## )/g);
   };
 
   // Format date
   const formatDate = (title) => {
     const match = title?.match(/\d{4}-\d{2}-\d{2}/);
+
     if (!match) return null;
 
     const [year, month, day] = match[0].split("-");
+
     return `${day}-${month}-${year}`;
+  };
+
+  // Clean title
+  const formatTitle = (title) => {
+    if (!title) return "";
+
+    return title
+      .replace(/^\d{4}-\d{2}-\d{2}-/, "")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
   };
 
   return (
     <div className="app-container">
+
       {/* PROGRESS BAR */}
-      <div ref={progressRef} className="progress-bar"></div>
+      <div
+        ref={progressRef}
+        className="progress-bar"
+      ></div>
 
       {/* HEADER */}
       <div className="header">
+
+        <p className="domains-tag">
+          Insight Archive
+        </p>
+
         <h1 style={{ textTransform: "capitalize" }}>
-          {name.replace("-", " ")} Insights
+          {name.replace(/-/g, " ")} Insights
         </h1>
+
       </div>
 
       {/* LIST VIEW */}
       {!selected && (
-        <div className="section-grid">
-          {insights.map((item, index) => (
-            <div
-              key={index}
-              className="card"
-              onClick={() => setSelected(item)}
+        <>
+          <div className="section-grid">
+
+            {insights.map((item, index) => (
+              <div
+                key={index}
+                className="card"
+                onClick={() => setSelected(item)}
+              >
+                <h3>
+                  {formatTitle(item.title)}
+                </h3>
+
+                <span>
+                  Click to open
+                </span>
+              </div>
+            ))}
+
+          </div>
+
+          {/* NAVIGATION */}
+          <div className="domain-navigation-row insights-navigation">
+
+            <button
+              className="button secondary-button"
+              onClick={() => navigate(`/domain/${name}`)}
             >
-              <h3>{item.title}</h3>
-              <span>Click to open</span>
-            </div>
-          ))}
-        </div>
+              ← Back To Domain
+            </button>
+
+            <button
+              className="button secondary-button"
+              onClick={() => navigate("/")}
+            >
+              ← Home
+            </button>
+
+          </div>
+        </>
       )}
 
       {/* DETAIL VIEW */}
@@ -112,12 +163,15 @@ function InsightsPage() {
           {/* DATE */}
           {formatDate(selected.title) && (
             <div className="floating-date">
-              <span>On {formatDate(selected.title)}</span>
+              <span>
+                On {formatDate(selected.title)}
+              </span>
             </div>
           )}
 
           {/* CONTENT */}
           <div className="content-area">
+
             {getSections(selected.content).map((section, idx) => (
               <div
                 key={idx}
@@ -131,7 +185,6 @@ function InsightsPage() {
                     img: ({ node, ...props }) => {
                       let src = props.src || "";
 
-                      // normalize path
                       if (!src.startsWith("/")) {
                         src = "/" + src;
                       }
@@ -143,7 +196,10 @@ function InsightsPage() {
                           className="insight-image"
                           onClick={() => setZoomImage(src)}
                           onError={() => {
-                            console.error("Image failed:", src);
+                            console.error(
+                              "Image failed:",
+                              src
+                            );
                           }}
                         />
                       );
@@ -154,21 +210,25 @@ function InsightsPage() {
                 </ReactMarkdown>
               </div>
             ))}
+
           </div>
 
-          {/* BACK BUTTON */}
+          {/* BACK */}
           <div className="bottom-nav">
+
             <button
               className="button"
               onClick={() => setSelected(null)}
             >
-              ← Back
+              ← Back To Insights
             </button>
+
           </div>
+
         </div>
       )}
 
-      {/* 🔥 ZOOM MODAL */}
+      {/* IMAGE ZOOM */}
       {zoomImage && (
         <div
           className="zoom-overlay"
@@ -181,6 +241,7 @@ function InsightsPage() {
           />
         </div>
       )}
+
     </div>
   );
 }
