@@ -121,6 +121,39 @@ function Home() {
 
       </div>
 
+      {/* CONNECTED PLATFORMS */}
+      <div className="connected-platforms">
+
+        <details className="connected-dropdown">
+
+          <summary>
+            Connected Platforms
+          </summary>
+
+          <div className="connected-links">
+
+            <a
+              href="https://lgcsystems.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LGC Systems - Umbrella platform for all LGC products
+            </a>
+
+            <a
+              href="https://founder-portfolio.lgcsystems.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Founder Portfolio - Person behind Learn With Linga and LGC Systems
+            </a>
+
+          </div>
+
+        </details>
+
+      </div>
+
     </div>
   );
 }
