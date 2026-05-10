@@ -40,12 +40,6 @@ This created confusion because:
 
 ---
 
-### Failure reference
-
-![Engineering Thoughts image rendering failure](/images/development-and-debugging-screenshots/engineering-thoughts-images-not-rendering-due-to-runtime-public-root-mismatch.png)
-
----
-
 ## 3. My initial assumptions
 
 Initially I thought:
@@ -154,12 +148,6 @@ After moving:
 
 ---
 
-### Fix reference
-
-![Engineering Thoughts rendering issue fixed after moving assets to correct public root](/images/development-and-debugging-screenshots/engineering-thoughts-rendering-fixed-after-moving-public-folder-assets.png)
-
----
-
 ## 9. Secondary issue — Tailwind & Stylelint
 
 While refining styling, another issue appeared:
@@ -176,12 +164,6 @@ But actual problem was:
 
 ---
 
-### Tooling issue reference
-
-![Tailwind Stylelint unknown at-rule issue](/images/development-and-debugging-screenshots/stylelint-tailwind-unknown-rule-issue.png)
-
----
-
 ## 10. Fix applied
 
 I added Stylelint configuration support using:
@@ -192,12 +174,6 @@ I added Stylelint configuration support using:
 And configured:
 - Tailwind directive handling
 - Unknown at-rule suppression
-
----
-
-### Tooling fix reference
-
-![Stylelint configuration added for Tailwind directives](/images/development-and-debugging-screenshots/stylelint-config-added-for-tailwind-support.png)
 
 ---
 
