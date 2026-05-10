@@ -3,79 +3,124 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
 
-  const domains = [
-    { name: "frontend", label: "Frontend", desc: "UI logic, browser behavior" },
-    { name: "backend", label: "Backend", desc: "APIs, data flow, systems" },
-    { name: "cloud", label: "Cloud", desc: "Infra, deployment thinking" },
-    { name: "dsa", label: "Data Structures & Algorithms", desc: "Problem solving & patterns" },
-    { name: "projects", label: "Projects", desc: "System-level insights" },
-    { name: "failures-and-fixes", label: "Failures and Fixes", desc: "Real debugging lessons" },
-    { name: "communication", label: "Professional Communication", desc: "Clarity in expression" },
-    
-    
-    // 🔥 Updated
-    { 
-      name: "dbms", 
-      label: "DBMS", 
-      desc: "Relational data systems, constraints, normalization, and how structure enforces data integrity" 
-    },
-
-    // 🔥 Updated
-    { 
-      name: "nosql", 
-      label: "NoSQL", 
-      desc: "Distributed databases, CAP theorem, and choosing data models based on system trade-offs" 
-    },
-
-      // New Domain
-    { name: "reasons-behind-thoughts", label: "Reasons Behind Thoughts", desc: "Explore the reasoning, system experiences, debugging journeys, and engineering realizations that shaped each thought and perspective." },
-  ];
-
   return (
     <div className="app-container">
+
       {/* HERO */}
-      <div className="hero">
-        <h1 className="hero-title">Learning Insights — LGC</h1>
-        <p className="hero-sub">
-          Not tutorials. Not notes.  
-          <br />
-          Just the insights that actually matter when you learn and build.
-        </p>
-      </div>
+      <div className="landing-hero">
 
-      {/* WHY */}
-      <div className="section">
-        <h2>Why this exists</h2>
-        <p>
-          Most learning content focuses on <strong>what</strong>.  
-          This system focuses on <strong>what actually matters</strong>.
-        </p>
+        <div className="landing-brand">
 
-        <ul>
-          <li>Extract real understanding from concepts</li>
-          <li>Capture insights during building</li>
-          <li>Document failures and fixes</li>
-          <li>Reduce time wasted on shallow learning</li>
-        </ul>
-      </div>
+          <img
+            src="/learn-with-linga-logo-circular.png"
+            alt="Learn With Linga"
+            className="landing-logo"
+          />
 
-      {/* DOMAINS */}
-      <div className="section">
-        <h2>Explore Domains</h2>
+          <div>
+            <h1 className="landing-title">
+              Learning Insights — Learn With Linga
+            </h1>
 
-        <div className="section-grid">
-          {domains.map((d, index) => (
-            <div
-              key={index}
-              className="card domain-card"
-              onClick={() => navigate(`/domain/${d.name}`)}
-            >
-              <h3>{d.label}</h3>
-              <p>{d.desc}</p>
-            </div>
-          ))}
+            <p className="landing-sub">
+              Not tutorials. Not notes.
+              <br />
+              Just the insights that actually matter
+              while learning and building systems.
+            </p>
+          </div>
+
         </div>
+
       </div>
+
+      {/* PRIMARY CTA */}
+      <div className="home-primary-wrapper">
+
+        <div className="home-navigation-card home-primary-card">
+
+          <p className="home-navigation-tag">
+            Main Exploration
+          </p>
+
+          <h2>
+            Explore Engineering Domains
+          </h2>
+
+          <p>
+            Browse structured engineering insights organized
+            across systems, architecture, debugging,
+            projects, reasoning, and learning domains.
+          </p>
+
+          <button
+            className="button"
+            onClick={() => navigate("/domains")}
+          >
+            Explore Domains
+          </button>
+
+        </div>
+
+      </div>
+
+      {/* SECONDARY CTA GRID */}
+      <div className="home-secondary-grid">
+
+        {/* WHY THIS EXISTS */}
+        <div className="home-navigation-card">
+
+          <p className="home-navigation-tag">
+            Philosophy
+          </p>
+
+          <h2>
+            Why This Insight System Exists
+          </h2>
+
+          <p>
+            Understand the purpose behind this platform,
+            the problems it tries to solve,
+            and the engineering mindset behind its structure.
+          </p>
+
+          <button
+            className="button secondary-button"
+            onClick={() => navigate("/why-this-exists")}
+          >
+            Open Philosophy
+          </button>
+
+        </div>
+
+        {/* HOW TO USE */}
+        <div className="home-navigation-card">
+
+          <p className="home-navigation-tag">
+            Reading Approach
+          </p>
+
+          <h2>
+            How To Extract Insights Properly
+          </h2>
+
+          <p>
+            Learn how these insights should be approached,
+            interpreted, connected, and used for deeper
+            engineering understanding.
+          </p>
+
+          <button
+            className="button secondary-button"
+            onClick={() => navigate("/how-to-use-insights")}
+          >
+            Learn How To Read
+          </button>
+
+        </div>
+
+      </div>
+
     </div>
   );
 }

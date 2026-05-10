@@ -334,3 +334,878 @@ html {
   }
 }
 
+/* ===================================== */
+/* 🔥 DOMAINS PAGE */
+/* ===================================== */
+
+.domains-hero {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.domains-tag {
+  color: #38bdf8;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 1rem;
+}
+
+.domains-title {
+  font-size: 3.2rem;
+  line-height: 1.08;
+  font-weight: 700;
+  color: #f8fafc;
+  max-width: 800px;
+}
+
+.domains-sub {
+  margin-top: 1.5rem;
+  max-width: 760px;
+
+  color: #94a3b8;
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+/* ===================================== */
+/* 🔥 DOMAINS GRID */
+/* ===================================== */
+
+.domains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ===================================== */
+/* 🔥 DOMAIN CARD */
+/* ===================================== */
+
+.domain-explorer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 260px;
+
+  padding: 1.6rem;
+
+  background: linear-gradient(
+    145deg,
+    rgba(2, 6, 23, 0.95),
+    rgba(15, 23, 42, 0.95)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.08);
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.domain-explorer-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(56, 189, 248, 0.45);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(56, 189, 248, 0.08);
+}
+
+.domain-explorer-card h2 {
+  font-size: 1.35rem;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+}
+
+.domain-explorer-card p {
+  color: #94a3b8;
+  line-height: 1.8;
+  font-size: 0.98rem;
+}
+
+/* ===================================== */
+/* 🔥 DOMAINS FOOTER */
+/* ===================================== */
+
+.domains-footer {
+  margin-top: 5rem;
+  padding-top: 3rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.08);
+}
+
+.domains-footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.domains-footer p {
+  color: #94a3b8;
+  line-height: 1.9;
+}
+
+/* ===================================== */
+/* 🔥 MOBILE OPTIMIZATION */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .domains-hero {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .domains-title {
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+
+  .domains-sub {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .domains-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .domain-explorer-card {
+    min-height: auto;
+    padding: 1.2rem;
+  }
+
+  .domain-explorer-card h2 {
+    font-size: 1.15rem;
+  }
+
+  .domain-explorer-card p {
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .domains-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+}
+
+/* ===================================== */
+/* 🔥 HOME NAVIGATION GRID */
+/* ===================================== */
+
+.home-navigation-grid {
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 1.5rem;
+}
+
+/* ===================================== */
+/* 🔥 HOME NAVIGATION CARD */
+/* ===================================== */
+
+.home-navigation-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 280px;
+
+  padding: 1.8rem;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15, 23, 42, 0.96),
+      rgba(2, 6, 23, 0.96)
+    );
+
+  border: 1px solid rgba(148, 163, 184, 0.08);
+
+  transition:
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.home-navigation-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(56, 189, 248, 0.35);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(56, 189, 248, 0.08);
+}
+
+/* ===================================== */
+/* 🔥 PRIMARY CARD */
+/* ===================================== */
+
+.primary-card {
+  border-color: rgba(56, 189, 248, 0.18);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(8, 47, 73, 0.92),
+      rgba(2, 6, 23, 0.96)
+    );
+}
+
+/* ===================================== */
+/* 🔥 CARD CONTENT */
+/* ===================================== */
+
+.home-navigation-tag {
+  color: #38bdf8;
+
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.home-navigation-card h2 {
+  margin-top: 1rem;
+
+  font-size: 1.55rem;
+  line-height: 1.3;
+
+  color: #f8fafc;
+}
+
+.home-navigation-card p {
+  margin-top: 1rem;
+
+  color: #94a3b8;
+
+  line-height: 1.85;
+}
+
+/* ===================================== */
+/* 🔥 MOBILE */
+/* ===================================== */
+
+@media (max-width: 1024px) {
+
+  .home-navigation-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .home-navigation-card {
+    min-height: auto;
+    padding: 1.4rem;
+  }
+
+  .home-navigation-card h2 {
+    font-size: 1.25rem;
+  }
+
+}
+
+
+/* ===================================== */
+/* 🔥 WHY THIS EXISTS PAGE */
+/* ===================================== */
+
+.domain-section-card {
+  margin-top: 2rem;
+
+  padding: 2rem;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15, 23, 42, 0.94),
+      rgba(2, 6, 23, 0.96)
+    );
+
+  border: 1px solid rgba(148, 163, 184, 0.08);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.28);
+}
+
+/* ===================================== */
+/* 🔥 SECTION CONTENT */
+/* ===================================== */
+
+.domain-section-card h2 {
+  font-size: 1.7rem;
+  line-height: 1.3;
+
+  color: #f8fafc;
+
+  margin-bottom: 1.2rem;
+}
+
+.domain-section-card p {
+  color: #94a3b8;
+
+  line-height: 1.95;
+
+  margin-top: 1rem;
+
+  max-width: 760px;
+}
+
+.domain-section-card ul {
+  margin-top: 1.2rem;
+  padding-left: 1.4rem;
+}
+
+.domain-section-card li {
+  margin-bottom: 0.8rem;
+
+  color: #cbd5e1;
+
+  line-height: 1.8;
+}
+
+/* ===================================== */
+/* 🔥 BLOCKQUOTE */
+/* ===================================== */
+
+.domain-section-card blockquote,
+.domains-footer blockquote {
+  margin-top: 1.5rem;
+
+  padding-left: 1rem;
+
+  border-left: 3px solid #38bdf8;
+
+  color: #f8fafc;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+/* ===================================== */
+/* 🔥 FOOTER REFINEMENT */
+/* ===================================== */
+
+.domains-footer {
+  margin-top: 4rem;
+  padding-top: 3rem;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.08);
+}
+
+.domains-footer h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+
+  color: #f8fafc;
+}
+
+.domains-footer p {
+  color: #94a3b8;
+  line-height: 1.9;
+}
+
+/* ===================================== */
+/* 🔥 MOBILE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .domain-section-card {
+    padding: 1.4rem;
+    border-radius: 18px;
+  }
+
+  .domain-section-card h2 {
+    font-size: 1.35rem;
+    line-height: 1.4;
+  }
+
+  .domain-section-card p,
+  .domain-section-card li {
+    font-size: 0.96rem;
+    line-height: 1.8;
+  }
+
+  .domain-section-card blockquote,
+  .domains-footer blockquote {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .domains-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+}
+
+.domains-back-home {
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-button {
+  background: transparent;
+
+  border: 1px solid rgba(148, 163, 184, 0.18);
+
+  color: #cbd5e1;
+}
+
+.secondary-button:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+
+  color: #f8fafc;
+}
+
+/* ===================================== */
+/* 🔥 DOMAIN CTA SECTION */
+/* ===================================== */
+
+.domain-cta {
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ===================================== */
+/* 🔥 PRIMARY ACTION */
+/* ===================================== */
+
+.domain-cta .button:first-child {
+  min-width: 180px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 30px rgba(56, 189, 248, 0.18);
+}
+
+/* ===================================== */
+/* 🔥 SECONDARY NAVIGATION */
+/* ===================================== */
+
+.domain-navigation-row {
+  margin-top: 1rem;
+
+  display: flex;
+  gap: 0.8rem;
+
+  flex-wrap: wrap;
+}
+
+/* ===================================== */
+/* 🔥 SECONDARY BUTTONS */
+/* ===================================== */
+
+.secondary-button {
+  background: transparent;
+
+  border: 1px solid rgba(148, 163, 184, 0.16);
+
+  color: #cbd5e1;
+
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.secondary-button:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+
+  color: #f8fafc;
+
+  background: rgba(15, 23, 42, 0.75);
+}
+
+/* ===================================== */
+/* 🔥 BLOCKQUOTE SPACING */
+/* ===================================== */
+
+.domain-section-card blockquote {
+  margin-top: 1rem;
+
+  max-width: 760px;
+}
+
+/* ===================================== */
+/* 🔥 MOBILE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .domain-cta {
+    align-items: stretch;
+  }
+
+  .domain-cta .button:first-child {
+    width: 100%;
+  }
+
+  .domain-navigation-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .domain-navigation-row .button {
+    width: 100%;
+  }
+
+}
+
+/* ===================================== */
+/* 🔥 HERO SECTION */
+/* ===================================== */
+
+.landing-hero {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* ===================================== */
+/* 🔥 BRAND LAYOUT */
+/* ===================================== */
+
+.landing-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  flex-wrap: nowrap;
+}
+
+.landing-brand > div {
+  min-width: 0;
+}
+
+/* ===================================== */
+/* 🔥 LOGO */
+/* ===================================== */
+
+.landing-logo {
+  width: 110px;
+  height: 110px;
+
+  object-fit: cover;
+
+  border-radius: 999px;
+
+  flex-shrink: 0;
+
+  box-shadow:
+    0 0 30px rgba(56, 189, 248, 0.12);
+}
+
+/* ===================================== */
+/* 🔥 TEXT */
+/* ===================================== */
+
+.landing-title {
+  margin: 0;
+
+  font-size: 3rem;
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  color: #f8fafc;
+}
+
+.landing-sub {
+  margin-top: 0.9rem;
+
+  max-width: 720px;
+
+  color: #94a3b8;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+/* ===================================== */
+/* 🔥 TABLET */
+/* ===================================== */
+
+@media (max-width: 1024px) {
+
+  .landing-title {
+    font-size: 2.5rem;
+  }
+
+}
+
+/* ===================================== */
+/* 🔥 MOBILE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .landing-hero {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .landing-brand {
+    align-items: center;
+
+    gap: 1rem;
+  }
+
+  .landing-logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .landing-title {
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+
+  .landing-sub {
+    margin-top: 0.55rem;
+
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+
+}
+
+/* ===================================== */
+/* 🔥 SMALL MOBILE */
+/* ===================================== */
+
+@media (max-width: 480px) {
+
+  .landing-brand {
+    gap: 0.85rem;
+  }
+
+  .landing-logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .landing-title {
+    font-size: 1.55rem;
+  }
+
+  .landing-sub {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+}
+
+/* ===================================== */
+/* 🔥 PRIMARY CTA WRAPPER */
+/* ===================================== */
+
+.home-primary-wrapper {
+  margin-top: 3rem;
+}
+
+/* ===================================== */
+/* 🔥 PRIMARY CARD */
+/* ===================================== */
+
+.home-primary-card {
+  padding: 2.4rem;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(8, 47, 73, 0.96),
+      rgba(2, 6, 23, 0.98)
+    );
+
+  border: 1px solid rgba(56, 189, 248, 0.22);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.38),
+    0 0 45px rgba(56, 189, 248, 0.08);
+}
+
+.home-primary-card h2 {
+  margin-top: 1rem;
+
+  font-size: 2.2rem;
+  line-height: 1.2;
+
+  color: #f8fafc;
+}
+
+.home-primary-card p {
+  margin-top: 1.1rem;
+
+  max-width: 760px;
+
+  color: #94a3b8;
+
+  line-height: 1.9;
+}
+
+/* ===================================== */
+/* 🔥 SECONDARY GRID */
+/* ===================================== */
+
+.home-secondary-grid {
+  margin-top: 1.8rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.4rem;
+}
+
+/* ===================================== */
+/* 🔥 SECONDARY CARDS */
+/* ===================================== */
+
+.home-secondary-grid .home-navigation-card {
+  padding: 1.7rem;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15, 23, 42, 0.94),
+      rgba(2, 6, 23, 0.96)
+    );
+
+  border: 1px solid rgba(148, 163, 184, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.home-secondary-grid .home-navigation-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(56, 189, 248, 0.22);
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.28);
+}
+
+/* ===================================== */
+/* 🔥 TAG */
+/* ===================================== */
+
+.home-navigation-tag {
+  color: #38bdf8;
+
+  font-size: 0.75rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.18em;
+}
+
+/* ===================================== */
+/* 🔥 SECONDARY TITLES */
+/* ===================================== */
+
+.home-secondary-grid h2 {
+  margin-top: 0.9rem;
+
+  font-size: 1.35rem;
+  line-height: 1.35;
+
+  color: #f8fafc;
+}
+
+/* ===================================== */
+/* 🔥 SECONDARY TEXT */
+/* ===================================== */
+
+.home-secondary-grid p {
+  margin-top: 0.95rem;
+
+  color: #94a3b8;
+
+  line-height: 1.8;
+}
+
+/* ===================================== */
+/* 🔥 BUTTON SPACING */
+/* ===================================== */
+
+.home-primary-card .button,
+.home-secondary-grid .button {
+  margin-top: 1.8rem;
+}
+
+/* ===================================== */
+/* 🔥 MOBILE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .home-primary-card {
+    padding: 1.5rem;
+
+    border-radius: 20px;
+  }
+
+  .home-primary-card h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .home-primary-card p {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+
+  .home-secondary-grid {
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+  }
+
+  .home-secondary-grid .home-navigation-card {
+    padding: 1.3rem;
+
+    border-radius: 18px;
+  }
+
+  .home-secondary-grid h2 {
+    font-size: 1.15rem;
+  }
+
+  .home-secondary-grid p {
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+}
