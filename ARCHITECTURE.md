@@ -64,18 +64,64 @@ Purpose:
 
 Structure:
 
+### Content Layer Structure
+
 ```txt
 client/public/insights/
+│
 ├── frontend/
+│   ├── README.md
+│   └── insights/
+│
 ├── backend/
+│   ├── README.md
+│   └── insights/
+│
 ├── cloud/
+│   ├── README.md
+│   └── insights/
+│
+├── cloud-concepts/
+│   ├── README.md
+│   └── insights/
+│
 ├── dsa/
+│   ├── README.md
+│   └── insights/
+│
 ├── projects/
+│   ├── README.md
+│   └── insights/
+│
 ├── failures-and-fixes/
+│   ├── README.md
+│   └── insights/
+│
+├── professional-communication/
+│   ├── README.md
+│   └── insights/
+│
 ├── dbms/
+│   ├── README.md
+│   └── insights/
+│
 ├── nosql/
-└── reasons-behind-thoughts/
+│   ├── README.md
+│   └── insights/
+│
+├── reasons-behind-thoughts/
+│   ├── README.md
+│   └── insights/
+│
+├── ai-and-ml/
+│   ├── README.md
+│   └── insights/
+│
+└── meta-learning/
+    ├── README.md
+    └── insights/
 ```
+
 
 Each domain contains:
 
@@ -297,6 +343,40 @@ Referenced inside markdown as:
 /images/...
 ```
 
+### Learning Evidence Images
+
+The platform supports proof-backed learning through dedicated image storage.
+
+Location:
+
+```txt
+client/public/images/images-from-learning/
+```
+
+Purpose:
+
+- debugging evidence
+- implementation screenshots
+- learning proof
+- system observations
+- before/after comparisons
+
+These images act as supporting evidence for engineering insights rather than decorative assets.
+
+This enables:
+
+```txt
+Learning
+   ↓
+Observation
+   ↓
+Evidence
+   ↓
+Insight
+```
+
+The image layer strengthens insight quality by connecting explanations with verifiable learning artifacts.
+
 ---
 
 ### Rendering Strategy
@@ -317,7 +397,16 @@ CSS controls:
 
 ## 7. Domain Architecture
 
-Domains separate different engineering thinking layers.
+Domains separate different engineering understanding layers.
+
+The platform intentionally distinguishes between:
+
+- domain-specific knowledge
+- cross-domain insights
+- engineering reflections
+- debugging-driven lessons
+
+This prevents unrelated concepts from becoming mixed together while preserving contextual understanding.
 
 Purpose:
 - maintain conceptual clarity
@@ -332,13 +421,16 @@ Purpose:
 frontend
 backend
 cloud
+cloud-concepts
 dsa
 projects
 failures-and-fixes
-communication
+professional-communication
 dbms
 nosql
 reasons-behind-thoughts
+ai-and-ml
+meta-learning
 ```
 
 ---
@@ -386,6 +478,7 @@ Purpose:
 The architecture intentionally avoids:
 - exposing all systems directly
 - turning homepage into a directory
+
 
 ---
 
@@ -523,6 +616,63 @@ while preserving:
 
 ---
 
+## 16. Meta Learning Architecture
+
+The platform separates:
+
+```txt
+Domain Knowledge
+```
+
+from:
+
+```txt
+Cross-Domain Insight
+```
+
+Example:
+
+```txt
+AI & ML
+    ↓
+Embedding Exercise
+    ↓
+Insight Discovered:
+"Syntax Correct ≠ Logic Correct"
+    ↓
+Stored In:
+Meta Learning
+```
+
+Meta Learning exists to preserve insights discovered while learning one domain but applicable across many domains.
+
+This prevents valuable engineering lessons from becoming trapped inside a single technical category.
+
+Purpose:
+
+- preserve transferable understanding
+- capture engineering thinking patterns
+- store cross-domain realizations
+- improve long-term learning quality
+
+The architecture therefore supports two forms of knowledge:
+
+```txt
+Domain-Specific Knowledge
+```
+
+and
+
+```txt
+Domain-Independent Learning Insights
+```
+
+This distinction enables the platform to evolve beyond a traditional note-taking system into a structured engineering understanding system.
+
+The Meta Learning domain serves as a knowledge abstraction layer where insights are categorized based on applicability rather than origin.
+
+---
+
 ## Author
 
 **Ramalingam Jayavelu**  
@@ -538,5 +688,5 @@ Focused on:
 
 ## Platform
 
-**Learn With Linga — Engineering Insights**  
+**Learn With Linga — Engineering Insights Version 1.1**  
 Part of the LGC Systems ecosystem.
