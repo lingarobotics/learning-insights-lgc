@@ -242,6 +242,78 @@ const domainInfo = {
       "Thoughts become meaningful when the underlying experiences, failures, and realizations behind them are understood.",
   },
 
+  "ai-ml": {
+    title: "AI & ML",
+    desc: "Understand how intelligent systems learn, represent information, retrieve knowledge, and make predictions from data.",
+
+    focus: [
+      "Machine Learning fundamentals",
+      "Neural network understanding",
+      "Vector embeddings and retrieval",
+      "Large Language Models (LLMs)",
+      "Transformer architecture concepts",
+    ],
+
+    expectations: [
+      "AI concept breakdowns",
+      "Embedding and vector database insights",
+      "Model behavior observations",
+      "RAG and retrieval understanding",
+      "Practical AI engineering realizations",
+    ],
+
+    mindset:
+      "AI engineering is not just about using models — it is understanding how systems represent information, learn patterns from data, retrieve relevant knowledge, and generate meaningful outputs.",
+  },
+
+  "cloud-concepts": {
+    title: "Cloud Concepts",
+    desc: "Understand the reasoning, architecture, and principles behind modern cloud computing systems.",
+
+    focus: [
+      "Infrastructure abstractions",
+      "Scalability concepts",
+      "Reliability and availability principles",
+      "Networking and distributed systems",
+      "Cloud architecture patterns",
+    ],
+
+    expectations: [
+      "Cloud architecture insights",
+      "Infrastructure-level understanding",
+      "Scalability observations",
+      "Distributed system reasoning",
+      "Concept-driven cloud learning",
+    ],
+
+    mindset:
+      "Cloud concepts explain why modern systems are built the way they are. Understanding the principles behind scalability, reliability, and infrastructure is more valuable than memorizing cloud services.",
+  },
+
+  "meta-learning": {
+    title: "Meta Learning",
+    desc: "Capture insights discovered while learning a domain that remain valuable beyond the domain that revealed them.",
+
+    focus: [
+      "Cross-domain realizations",
+      "Insights extracted during learning",
+      "Reasoning improvements",
+      "Understanding breakthroughs",
+      "Lessons applicable beyond a single domain",
+    ],
+
+    expectations: [
+      "Insights discovered during learning",
+      "Cross-domain lessons",
+      "Reasoning-driven observations",
+      "Engineering realizations",
+      "Understanding-oriented takeaways",
+    ],
+
+    mindset:
+      "Some insights are bigger than the domain that revealed them. Meta Learning preserves lessons discovered while learning one domain that continue to provide value across many other domains.",
+  },
+
 };
 
 function DomainPage() {

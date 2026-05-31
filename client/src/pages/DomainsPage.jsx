@@ -54,6 +54,22 @@ function DomainsPage() {
       label: "Reasons Behind Thoughts",
       desc: "Explore the reasoning, engineering realizations, and mindset behind technical reflections.",
     },
+
+    {
+      name: "ai-ml",
+      label: "AI & ML",
+      desc: "Understand embeddings, LLMs, retrieval systems, and how intelligent systems learn and reason from data.",
+    },
+    {
+      name: "cloud-concepts",
+      label: "Cloud Concepts",
+      desc: "Explore the principles behind scalability, reliability, distributed systems, and cloud architecture.",
+    },
+    {
+      name: "meta-learning",
+      label: "Meta Learning",
+      desc: "Preserve insights extracted during learning that are not limited to the domain that revealed them.",
+    },
   ];
 
   return (
