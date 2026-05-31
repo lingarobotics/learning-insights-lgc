@@ -40,7 +40,20 @@ Rendered Insight UI
 ```txt
 learning-insights-lgc/
 ├── api/
+│   └── insights/
+│       └── [domain].js
+│
 ├── client/
+│   ├── public/
+│   │   ├── insights/
+│   │   └── images/
+│   │
+│   └── src/
+│       ├── pages/
+│       ├── components/
+│       ├── App.jsx
+│       └── index.css
+│
 ├── docs/
 ├── README.md
 ├── ARCHITECTURE.md
@@ -228,16 +241,58 @@ client/public/insights/
 
 ```txt
 client/public/insights/
+│
 ├── frontend/
+│   ├── README.md
+│   └── insights/
+│
 ├── backend/
+│   ├── README.md
+│   └── insights/
+│
 ├── cloud/
+│   ├── README.md
+│   └── insights/
+│
+├── cloud-concepts/
+│   ├── README.md
+│   └── insights/
+│
 ├── dsa/
+│   ├── README.md
+│   └── insights/
+│
 ├── projects/
+│   ├── README.md
+│   └── insights/
+│
 ├── failures-and-fixes/
-├── communication/
+│   ├── README.md
+│   └── insights/
+│
+├── professional-communication/
+│   ├── README.md
+│   └── insights/
+│
 ├── dbms/
+│   ├── README.md
+│   └── insights/
+│
 ├── nosql/
-└── reasons-behind-thoughts/
+│   ├── README.md
+│   └── insights/
+│
+├── reasons-behind-thoughts/
+│   ├── README.md
+│   └── insights/
+│
+├── ai-and-ml/
+│   ├── README.md
+│   └── insights/
+│
+└── meta-learning/
+    ├── README.md
+    └── insights/
 ```
 
 ---
@@ -265,10 +320,49 @@ client/public/insights/dsa/insights/
 Location:
 
 ```txt
-client/public/images/
+images/
+├── development-and-debugging-screenshots/
+├── engineering-thoughts-posts/
+├── images-from-learning/
+└── ...
+```
+### Learning Evidence Images
+
+The platform supports proof-backed learning through dedicated evidence images.
+
+Location:
+
+```txt
+client/public/images/images-from-learning/
+---
+### Learning Evidence Images
+
+The platform supports proof-backed learning through dedicated evidence images.
+
+Location:
+
+```txt
+client/public/images/images-from-learning/
 ```
 
----
+### Learning Evidence Images
+
+The platform supports proof-backed learning through dedicated evidence images.
+
+Location:
+
+```txt
+client/public/images/images-from-learning/
+```
+
+### Learning Evidence Images
+
+The platform supports proof-backed learning through dedicated evidence images.
+
+Location:
+
+```txt
+client/public/images/images-from-learning/
 
 ### Purpose
 
@@ -296,6 +390,7 @@ Images are referenced as:
 images/
 ├── development-and-debugging-screenshots/
 ├── engineering-thoughts-posts/
+├── images-from-learning/
 └── ...
 ```
 
@@ -530,10 +625,57 @@ The system is currently:
 - animation-supported
 - responsive-focused
 - domain-organized
+- evidence-supported
+- README-driven domains
+- cross-domain insight capable
+
+---
+## 19. Meta Learning Layer
+
+The platform supports two forms of knowledge.
+
+### Domain Knowledge
+
+Examples:
+
+```txt
+Frontend
+Backend
+DBMS
+AI & ML
+Cloud Concepts
+```
+
+These preserve domain-specific understanding.
 
 ---
 
-## 19. Future Expandability
+### Cross-Domain Insight
+
+Example:
+
+```txt
+AI & ML
+    ↓
+Embedding Exercise
+    ↓
+Insight:
+"Syntax Correct ≠ Logic Correct"
+    ↓
+Stored In:
+Meta Learning
+```
+
+Meta Learning exists to preserve insights whose usefulness extends beyond the domain that revealed them.
+
+Purpose:
+
+- preserve transferable understanding
+- capture reasoning improvements
+- store engineering realizations
+- prevent valuable lessons from remaining trapped inside one domain
+---
+## 20. Future Expandability
 
 Potential future additions:
 
@@ -566,6 +708,7 @@ Focused on:
 ---
 
 ## Platform
+**Learn With Linga — Engineering Insights**
+**Version 1.1**
 
-**Learn With Linga — Engineering Insights**  
 Part of the LGC Systems ecosystem.
