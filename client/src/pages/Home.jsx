@@ -22,7 +22,7 @@ function Home() {
               Learn With Linga — Engineering Insights
             </h1>
             <p className="landing-version">
-              Version 1.0
+              Version 1.1
             </p>
 
             <p className="landing-sub">
