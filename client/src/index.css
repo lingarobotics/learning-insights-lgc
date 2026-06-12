@@ -1345,3 +1345,13 @@ html {
   }
 
 }
+
+.insight-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.insight-link:hover {
+  opacity: 0.85;
+}

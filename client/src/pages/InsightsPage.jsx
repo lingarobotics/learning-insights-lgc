@@ -62,6 +62,14 @@ function InsightsPage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Convert bare URLs to markdown links
+  const linkifyBareUrls = (text) => {
+    return text.replace(
+      /https?:\/\/[^\s\n]+/g,
+      (url) => `[${url}](${url})`
+    );
+  };
+
   // Split sections
   const getSections = (content) => {
     if (!content) return [];
@@ -182,6 +190,17 @@ function InsightsPage() {
               >
                 <ReactMarkdown
                   components={{
+                    a: ({ href, children }) => (
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="insight-link"
+                      >
+                        {children}
+                      </a>
+                    ),
+
                     img: ({ node, ...props }) => {
                       let src = props.src || "";
 
@@ -206,7 +225,7 @@ function InsightsPage() {
                     },
                   }}
                 >
-                  {section}
+                  {linkifyBareUrls(section)}
                 </ReactMarkdown>
               </div>
             ))}
