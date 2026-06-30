@@ -1,8 +1,5 @@
 # Reasons Behind Thoughts — Software Engineering Is More Like Batting Than Coding
 
-Source:
-
-> learn_with_linga
 
 ---
 

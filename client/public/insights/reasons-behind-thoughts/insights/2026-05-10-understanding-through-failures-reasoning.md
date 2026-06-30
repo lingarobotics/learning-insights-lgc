@@ -1,8 +1,5 @@
 # Reasons Behind Thoughts — Understanding Through Failures
 
-Source:
-> learn_with_linga
-
 ---
 
 # Why This Post Exists

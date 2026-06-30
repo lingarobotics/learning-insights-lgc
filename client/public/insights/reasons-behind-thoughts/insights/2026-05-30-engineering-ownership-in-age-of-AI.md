@@ -1,9 +1,5 @@
 # Reasons Behind Thoughts — Engineering Ownership in the Age of AI
 
-Source:
-
-> learn_with_linga
-
 ---
 
 # Why This Post Exists

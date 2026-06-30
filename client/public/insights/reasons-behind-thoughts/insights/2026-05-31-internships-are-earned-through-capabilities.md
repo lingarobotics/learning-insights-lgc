@@ -1,9 +1,5 @@
 # Reasons Behind Thoughts — Internships Are Earned Through Capability
 
-Source:
-
-> learn_with_linga
-
 ---
 
 # Why This Post Exists

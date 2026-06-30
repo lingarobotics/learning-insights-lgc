@@ -1,8 +1,5 @@
 # Reasons Behind Thoughts — Why DSA Exists Beyond Interviews
 
-Source:
-
-> learn_with_linga
 
 ---
 

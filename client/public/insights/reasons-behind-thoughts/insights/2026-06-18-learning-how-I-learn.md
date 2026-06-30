@@ -1,9 +1,5 @@
 # Reasons Behind Thoughts — Learning How To Learn
 
-Source:
-
-> learn_with_linga
-
 ---
 
 # Why This Post Exists
