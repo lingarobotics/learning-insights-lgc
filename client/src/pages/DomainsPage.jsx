@@ -14,11 +14,7 @@ function DomainsPage() {
       label: "Backend",
       desc: "Learn how systems process, store, and respond beyond APIs.",
     },
-    {
-      name: "cloud",
-      label: "Cloud",
-      desc: "Understand infrastructure, deployment, and runtime environments.",
-    },
+    
     {
       name: "dsa",
       label: "Data Structures & Algorithms",

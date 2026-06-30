@@ -50,29 +50,7 @@ const domainInfo = {
       "Backend engineering is not just endpoints — it is understanding how systems coordinate logic, data, and execution flow.",
   },
 
-  cloud: {
-    title: "Cloud",
-    desc: "Understand how applications run in real infrastructure.",
 
-    focus: [
-      "Deployment systems",
-      "Infrastructure behavior",
-      "Build and runtime environments",
-      "Cloud debugging",
-      "Hosting pipeline understanding",
-    ],
-
-    expectations: [
-      "Deployment failure analysis",
-      "Infrastructure-level observations",
-      "Environment-related debugging",
-      "Cloud execution understanding",
-      "Pipeline-oriented thinking",
-    ],
-
-    mindset:
-      "Cloud learning begins when systems move beyond localhost and interact with real deployment environments.",
-  },
 
   dsa: {
     title: "Data Structures & Algorithms",
