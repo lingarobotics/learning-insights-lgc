@@ -42,7 +42,7 @@ It is exactly:
 
 ## 2. Contact Form Failed Immediately
 
-![Initial Contact Form Failure](assets/images/initial-stage-of-contact-form-broken-one.png)
+![Initial Contact Form Failure](/images/development-and-debugging-screenshots/initial-stage-of-contact-form-broken-one.png)
 
 ### What I saw
 
@@ -68,7 +68,7 @@ The next step was to investigate the backend instead of the frontend.
 
 ## 3. Environment Variables Were Missing
 
-![Runtime Debug](assets/images/console-log-serverless-function-running-terminal-proved-that-in-local-dev-vercel-brevo-api-key-not-exist-and-loaded.png)
+![Runtime Debug](/images/development-and-debugging-screenshots/console-log-serverless-function-running-terminal-proved-that-in-local-dev-vercel-brevo-api-key-not-exist-and-loaded.png)
 
 ### What I did
 
@@ -98,7 +98,7 @@ The runtime itself was missing the required environment variables.
 
 ## 4. Confirming with Vercel Environment
 
-![Vercel Environment](assets/images/vercel-env-ls-command-confirms-that-vercel-don't-have-brevo-api-key-that-is-present-in-local-dev.png)
+![Vercel Environment](/images/development-and-debugging-screenshots/vercel-env-ls-command-confirms-that-vercel-don't-have-brevo-api-key-that-is-present-in-local-dev.png)
 
 ### What I checked
 
@@ -133,7 +133,7 @@ but they were never configured in Vercel.
 
 ## 5. Fix — Adding Missing Environment Variables
 
-![Adding Environment Variables](assets/images/after-finding-root-cause-absence-of-env-for-brevo-manually-added-in-vercel-those-api-keys-in-environmental-variable.png)
+![Adding Environment Variables](/images/development-and-debugging-screenshots/after-finding-root-cause-absence-of-env-for-brevo-manually-added-in-vercel-those-api-keys-in-environmental-variable.png)
 
 ### What I changed
 
@@ -152,7 +152,7 @@ The serverless function could finally access the required credentials.
 
 ## 6. Production Still Failed
 
-![401 Unauthorized](assets/images/even-after-pushing-to-production-that-it-shown-in-devtools-that-its-unauthorized-then-realized-its-brevo-was-careful-about-IP-address.png)
+![401 Unauthorized](/images/development-and-debugging-screenshots/even-after-pushing-to-production-that-it-shown-in-devtools-that-its-unauthorized-then-realized-its-brevo-was-careful-about-IP-address.png)
 
 ### What happened
 
@@ -178,7 +178,7 @@ I suspected:
 
 ## 7. Network Inspection Revealed the Real Cause
 
-![Unauthorized IP](assets/images/in-devtools-network-found-that-request-fetch-and-found-the-root-cause-is-brevo-is-not-allowing-due-to-unauthorized-IP-address.png)
+![Unauthorized IP](/images/development-and-debugging-screenshots/in-devtools-network-found-that-request-fetch-and-found-the-root-cause-is-brevo-is-not-allowing-due-to-unauthorized-IP-address.png)
 
 ### What I did
 
@@ -208,7 +208,7 @@ Reading the response body is often more valuable than looking only at the HTTP s
 
 ## 8. Sender Validation Issue
 
-![Sender Verification](assets/images/verifying-domain-in-new-brevo-account-for-portfolio.png)
+![Sender Verification](/images/development-and-debugging-screenshots/verifying-domain-in-new-brevo-account-for-portfolio.png)
 
 ### What happened
 
@@ -236,7 +236,7 @@ I verified:
 
 ## 9. Final Success
 
-![Email Delivered](assets/images/at-last-email-received-from-contact-form-to-my-primary-email-inbox.png)
+![Email Delivered](/images/development-and-debugging-screenshots/at-last-email-received-from-contact-form-to-my-primary-email-inbox.png)
 
 ### Result
 
