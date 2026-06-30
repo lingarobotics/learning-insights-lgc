@@ -4,9 +4,6 @@
 
 **Platform:** Educative.io
 
-**GitHub Repository for Documentation:**
-https://github.com/lingarobotics/educative-learning-journey
-
 ---
 
 ## Context
