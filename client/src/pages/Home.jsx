@@ -151,6 +151,14 @@ function Home() {
               Founder Portfolio - Person behind Learn With Linga and LGC Systems
             </a>
 
+            <a
+              href="https://thoughts-of-linga.hashnode.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hashnode Blog - Blogs and thoughts on engineering, learning, and systems
+            </a>
+
           </div>
 
         </details>
