@@ -41,12 +41,12 @@ The system consists of three layers:
 
 Location:
 
-client/public/insights/{domain}/insights/
+client/public/insights/{dimension}/insights/
 
 
 Contains:
 - markdown files (`.md`)
-- structured by domain
+- structured by dimension
 
 Example:
 
@@ -62,7 +62,7 @@ insights/
 
 Location:
 
-/api/insights/[domain]
+/api/insights/[dimension]
 
 
 Responsibilities:
@@ -75,7 +75,7 @@ Response format:
 [
 {
 title: "file-name",
-category: "domain",
+category: "dimension",
 content: "markdown string"
 }
 ]
@@ -161,13 +161,13 @@ Each section is rendered as a **card**:
 Routes:
 
 
-/domain/:name
-/domain/:name/insights
+/dimension/:name
+/dimension/:name/insights
 
 
 Flow:
 
-- user selects domain  
+- user selects dimension  
 - insights list loads  
 - user selects insight  
 - detailed view renders  

@@ -1,10 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom";
 
-const domainInfo = {
+const dimensionInfo = {
 
   frontend: {
     title: "Frontend",
-    desc: "Understand how UI actually behaves — not just how to code it.",
+    desc: "Understand how user interfaces behave, communicate, and evolve beyond implementation.",
 
     focus: [
       "Browser rendering behavior",
@@ -23,12 +23,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "Frontend engineering is not just designing screens — it is understanding how interfaces behave under real rendering conditions.",
+      "Frontend engineering is not just building interfaces—it is understanding how users experience systems through them.",
   },
 
   backend: {
     title: "Backend",
-    desc: "Learn how systems process, store, and respond — beyond APIs.",
+    desc: "Learn how systems process requests, coordinate services, and manage business logic.",
 
     focus: [
       "API flow understanding",
@@ -47,14 +47,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "Backend engineering is not just endpoints — it is understanding how systems coordinate logic, data, and execution flow.",
+      "Backend engineering is understanding how systems coordinate logic, data, and execution beyond individual APIs.",
   },
-
-
 
   dsa: {
     title: "Data Structures & Algorithms",
-    desc: "Think in patterns, scalability, and reasoning — not just solutions.",
+    desc: "Develop problem-solving intuition through patterns, efficiency, and trade-offs.",
 
     focus: [
       "Scalability thinking",
@@ -73,12 +71,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "DSA is not about memorizing solutions — it is about understanding how work grows as systems scale.",
+      "DSA is about understanding how solutions scale and why one approach is more suitable than another.",
   },
 
   projects: {
     title: "Projects",
-    desc: "Extract real engineering lessons from building systems.",
+    desc: "Extract engineering lessons and architectural decisions from real systems.",
 
     focus: [
       "Architecture decisions",
@@ -97,12 +95,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "Projects reveal how theoretical concepts behave when multiple systems interact together.",
+      "Projects reveal how engineering concepts interact when real systems are designed, built, and refined.",
   },
 
   "failures-and-fixes": {
     title: "Failures & Fixes",
-    desc: "Understand why systems break and how debugging creates deeper understanding.",
+    desc: "Learn what debugging, mistakes, and unexpected failures reveal about software.",
 
     focus: [
       "Deployment failures",
@@ -121,12 +119,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "Failures expose system behavior more honestly than successful execution ever can.",
+      "Failures often reveal more about how systems work than successful execution ever can.",
   },
 
   communication: {
     title: "Professional Communication",
-    desc: "Improve clarity in thinking, articulation, and structured expression.",
+    desc: "Improve technical writing, articulation, and engineering communication.",
 
     focus: [
       "Technical articulation",
@@ -145,12 +143,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "Clear communication reflects clear thinking. Engineering understanding loses value if it cannot be articulated properly.",
+      "Clear communication reflects clear thinking and makes engineering knowledge more valuable to others.",
   },
 
   dbms: {
     title: "DBMS",
-    desc: "Understand relational data systems, constraints, normalization, and structural integrity.",
+    desc: "Understand relational databases, normalization, integrity, and structured data.",
 
     focus: [
       "Relational thinking",
@@ -169,12 +167,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "DBMS is not just storing data — it is structuring systems so information remains consistent, reliable, and scalable.",
+      "Database design is about preserving consistency, reliability, and structure as systems evolve.",
   },
 
   nosql: {
     title: "NoSQL",
-    desc: "Explore distributed databases, CAP theorem, and system-level data trade-offs.",
+    desc: "Explore distributed databases and the trade-offs behind modern data systems.",
 
     focus: [
       "Distributed database behavior",
@@ -193,12 +191,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "NoSQL systems prioritize scalability and flexibility by intentionally trading off traditional relational guarantees.",
+      "NoSQL systems prioritize scalability and flexibility by making deliberate architectural trade-offs.",
   },
 
   "reasons-behind-thoughts": {
     title: "Reasons Behind Thoughts",
-    desc: "Explore the reasoning, engineering realizations, and mindset behind technical reflections.",
+    desc: "Explore the reasoning and engineering perspective behind technical reflections.",
 
     focus: [
       "Reasoning behind engineering thoughts",
@@ -217,12 +215,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "Thoughts become meaningful when the underlying experiences, failures, and realizations behind them are understood.",
+      "Understanding the reasoning behind an insight is often more valuable than remembering the insight itself.",
   },
 
   "ai-ml": {
     title: "AI & ML",
-    desc: "Understand how intelligent systems learn, represent information, retrieve knowledge, and make predictions from data.",
+    desc: "Understand modern AI systems, embeddings, retrieval, and machine learning concepts.",
 
     focus: [
       "Machine Learning fundamentals",
@@ -241,12 +239,12 @@ const domainInfo = {
     ],
 
     mindset:
-      "AI engineering is not just about using models — it is understanding how systems represent information, learn patterns from data, retrieve relevant knowledge, and generate meaningful outputs.",
+      "AI engineering begins with understanding how systems learn, represent information, and reason from data.",
   },
 
   "cloud-concepts": {
     title: "Cloud Concepts",
-    desc: "Understand the reasoning, architecture, and principles behind modern cloud computing systems.",
+    desc: "Explore scalability, reliability, distributed systems, and cloud architecture.",
 
     focus: [
       "Infrastructure abstractions",
@@ -265,45 +263,46 @@ const domainInfo = {
     ],
 
     mindset:
-      "Cloud concepts explain why modern systems are built the way they are. Understanding the principles behind scalability, reliability, and infrastructure is more valuable than memorizing cloud services.",
+      "Cloud concepts explain the engineering principles that allow modern systems to scale and remain reliable.",
   },
 
   "meta-learning": {
     title: "Meta Learning",
-    desc: "Capture insights discovered while learning a domain that remain valuable beyond the domain that revealed them.",
+    desc: "Capture insights about learning, thinking, and engineering growth across dimensions.",
 
     focus: [
-      "Cross-domain realizations",
+      "Cross-dimension realizations",
       "Insights extracted during learning",
       "Reasoning improvements",
       "Understanding breakthroughs",
-      "Lessons applicable beyond a single domain",
+      "Lessons applicable beyond a single dimension",
     ],
 
     expectations: [
       "Insights discovered during learning",
-      "Cross-domain lessons",
+      "Cross-dimension lessons",
       "Reasoning-driven observations",
       "Engineering realizations",
       "Understanding-oriented takeaways",
     ],
 
     mindset:
-      "Some insights are bigger than the domain that revealed them. Meta Learning preserves lessons discovered while learning one domain that continue to provide value across many other domains.",
+      "Some insights outgrow the dimension where they were discovered and become valuable across engineering as a whole.",
   },
 
 };
 
-function DomainPage() {
+
+function DimensionPage() {
   const { name } = useParams();
   const navigate = useNavigate();
 
-  const domain = domainInfo[name];
+  const dimension = dimensionInfo[name];
 
-  if (!domain) {
+  if (!dimension) {
     return (
       <div className="app-container">
-        Domain not found
+        Dimension not found
       </div>
     );
   }
@@ -312,33 +311,33 @@ function DomainPage() {
     <div className="app-container">
 
       {/* HERO */}
-      <div className="domain-hero">
+      <div className="dimension-hero">
 
-        <p className="domains-tag">
-          Engineering Domain
+        <p className="dimensions-tag">
+          Engineering Dimension
         </p>
 
         <h1 className="hero-title">
-          {domain.title}
+          {dimension.title}
         </h1>
 
         <p className="hero-sub">
-          {domain.desc}
+          {dimension.desc}
         </p>
 
       </div>
 
       <div className="divider"></div>
 
-      {/* DOMAIN FOCUS */}
-      <div className="domain-section-card">
+      {/* dimension FOCUS */}
+      <div className="dimension-section-card">
 
         <h2>
-          What this domain focuses on
+          What this dimension focuses on
         </h2>
 
         <ul>
-          {domain.focus.map((item, index) => (
+          {dimension.focus.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
@@ -346,14 +345,14 @@ function DomainPage() {
       </div>
 
       {/* EXPECTATIONS */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           What insights may contain
         </h2>
 
         <ul>
-          {domain.expectations.map((item, index) => (
+          {dimension.expectations.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
@@ -361,35 +360,35 @@ function DomainPage() {
       </div>
 
       {/* MINDSET */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           Engineering perspective
         </h2>
 
         <blockquote>
-          {domain.mindset}
+          {dimension.mindset}
         </blockquote>
 
       </div>
 
       {/* CTA */}
-      <div className="domain-cta">
+      <div className="dimension-cta">
 
         <button
           className="button"
-          onClick={() => navigate(`/domain/${name}/insights`)}
+          onClick={() => navigate(`/dimension/${name}/insights`)}
         >
           View Insights
         </button>
 
-        <div className="domain-navigation-row">
+        <div className="dimension-navigation-row">
 
           <button
             className="button secondary-button"
-            onClick={() => navigate("/domains")}
+            onClick={() => navigate("/dimensions")}
           >
-            ← Back To Domains
+            ← Back To Dimensions
           </button>
 
           <button
@@ -407,4 +406,4 @@ function DomainPage() {
   );
 }
 
-export default DomainPage;
+export default DimensionPage;

@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export default function handler(req, res) {
-  const { domain } = req.query;
+  const { dimension } = req.query;
 
   try {
     // ✅ FIXED PATH (IMPORTANT)
@@ -11,7 +11,7 @@ export default function handler(req, res) {
       "client",
       "public",
       "insights",
-      domain,
+      dimension,
       "insights"
     );
 
@@ -43,7 +43,7 @@ export default function handler(req, res) {
 
       return {
         title: file.replace(".md", ""),
-        category: domain,
+        category: dimension,
         content,
       };
     });

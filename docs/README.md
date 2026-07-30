@@ -81,7 +81,7 @@ Each file documents:
 - why it failed  
 - how it was fixed  
 
-Files are grouped by domain:
+Files are grouped by dimension:
 
 - deployment.md  
 - rendering.md  

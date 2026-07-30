@@ -7,20 +7,20 @@ function WhyThisExists() {
     <div className="app-container">
 
       {/* HERO */}
-      <div className="domains-hero">
+      <div className="dimensions-hero">
 
-        <p className="domains-tag">
+        <p className="dimensions-tag">
           Platform Philosophy
         </p>
 
-        <h1 className="domains-title">
+        <h1 className="dimensions-title">
           Learning should create
           understanding,
           <br />
           not information overload.
         </h1>
 
-        <p className="domains-sub">
+        <p className="dimensions-sub">
           This platform exists to capture what actually matters
           while learning, debugging, building, and understanding systems.
         </p>
@@ -28,7 +28,7 @@ function WhyThisExists() {
       </div>
 
       {/* SECTION 1 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           The problem with modern learning
@@ -59,7 +59,7 @@ function WhyThisExists() {
       </div>
 
       {/* SECTION 2 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           Why this system was created
@@ -89,10 +89,10 @@ function WhyThisExists() {
       </div>
 
       {/* SECTION 3 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
-          Why domains exist
+          Why dimensions exist
         </h2>
 
         <p>
@@ -112,14 +112,14 @@ function WhyThisExists() {
         </ul>
 
         <p>
-          Domains separate these understandings intentionally,
+          dimensions separate these understandings intentionally,
           so insights remain structured and reusable.
         </p>
 
       </div>
 
       {/* SECTION 4 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           The deeper goal
@@ -149,7 +149,7 @@ function WhyThisExists() {
       </div>
 
       {/* FINAL */}
-      <div className="domains-footer">
+      <div className="dimensions-footer">
 
         <h2>
           Final Understanding

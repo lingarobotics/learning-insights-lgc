@@ -41,7 +41,7 @@ Rendered Insight UI
 learning-insights-lgc/
 ├── api/
 │   └── insights/
-│       └── [domain].js
+│       └── [dimension].js
 │
 ├── client/
 │   ├── public/
@@ -75,7 +75,7 @@ Current Structure:
 ```txt
 api/
 └── insights/
-    └── [domain].js
+    └── [dimension].js
 ```
 
 ---
@@ -95,7 +95,7 @@ The API layer:
 ```txt
 Frontend Request
         ↓
-/api/insights/:domain
+/api/insights/:dimension
         ↓
 Filesystem Read
         ↓
@@ -142,9 +142,9 @@ client/src/App.jsx
 
 ```txt
 /                         → Home
-/domains                  → DomainsPage
-/domain/:name             → DomainPage
-/domain/:name/insights    → InsightsPage
+/dimensions                  → dimensionsPage
+/dimension/:name             → dimensionPage
+/dimension/:name/insights    → InsightsPage
 /why-this-exists          → WhyThisExists
 /how-to-use-insights      → HowToUseInsights
 ```
@@ -171,25 +171,25 @@ Responsibilities:
 
 ---
 
-### DomainsPage.jsx
+### dimensionsPage.jsx
 
 Purpose:
-- structured domain exploration
+- structured dimension exploration
 
 Responsibilities:
-- domain listing
+- dimension listing
 - engineering categorization
 - exploration hierarchy
 
 ---
 
-### DomainPage.jsx
+### dimensionPage.jsx
 
 Purpose:
-- domain-level explanation
+- dimension-level explanation
 
 Responsibilities:
-- explain domain purpose
+- explain dimension purpose
 - explain expected insight type
 - guide exploration flow
 
@@ -237,7 +237,7 @@ client/public/insights/
 
 ---
 
-### Domain Structure
+### dimension Structure
 
 ```txt
 client/public/insights/
@@ -299,7 +299,7 @@ client/public/insights/
 
 ### Insight Structure
 
-Each domain contains:
+Each dimension contains:
 
 ```txt
 insights/
@@ -405,15 +405,15 @@ images/
 #### 1. Markdown file created
 
 ```txt
-/public/insights/domain/insights/*.md
+/public/insights/dimension/insights/*.md
 ```
 
 ↓
 
-#### 2. API receives domain request
+#### 2. API receives dimension request
 
 ```txt
-/api/insights/:domain
+/api/insights/:dimension
 ```
 
 ↓
@@ -536,9 +536,9 @@ The platform intentionally uses layered navigation.
 ```txt
 Home
   ↓
-Domains
+dimensions
   ↓
-Domain
+dimension
   ↓
 Insights
   ↓
@@ -624,17 +624,17 @@ The system is currently:
 - frontend-rendered
 - animation-supported
 - responsive-focused
-- domain-organized
+- dimension-organized
 - evidence-supported
-- README-driven domains
-- cross-domain insight capable
+- README-driven dimensions
+- cross-dimension insight capable
 
 ---
 ## 19. Meta Learning Layer
 
 The platform supports two forms of knowledge.
 
-### Domain Knowledge
+### dimension Knowledge
 
 Examples:
 
@@ -646,11 +646,11 @@ AI & ML
 Cloud Concepts
 ```
 
-These preserve domain-specific understanding.
+These preserve dimension-specific understanding.
 
 ---
 
-### Cross-Domain Insight
+### Cross-dimension Insight
 
 Example:
 
@@ -666,14 +666,14 @@ Stored In:
 Meta Learning
 ```
 
-Meta Learning exists to preserve insights whose usefulness extends beyond the domain that revealed them.
+Meta Learning exists to preserve insights whose usefulness extends beyond the dimension that revealed them.
 
 Purpose:
 
 - preserve transferable understanding
 - capture reasoning improvements
 - store engineering realizations
-- prevent valuable lessons from remaining trapped inside one domain
+- prevent valuable lessons from remaining trapped inside one dimension
 ---
 ## 20. Future Expandability
 
@@ -684,7 +684,7 @@ metadata system
 search layer
 tagging system
 graph-linked insights
-cross-domain references
+cross-dimension references
 reading analytics
 ```
 

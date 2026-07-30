@@ -59,7 +59,7 @@ client/public/insights/
 
 Purpose:
 - stores markdown insight files
-- organizes insights by engineering domain
+- organizes insights by engineering dimension
 - acts as the source of truth
 
 Structure:
@@ -123,7 +123,7 @@ client/public/insights/
 ```
 
 
-Each domain contains:
+Each dimension contains:
 
 ```txt
 insights/
@@ -137,13 +137,13 @@ insights/
 Location:
 
 ```txt
-api/insights/[domain].js
+api/insights/[dimension].js
 ```
 
 Purpose:
 - dynamically reads markdown files
 - converts filesystem data into structured JSON
-- provides domain-based insight APIs
+- provides dimension-based insight APIs
 
 The API acts as a transformation layer between:
 - filesystem content
@@ -155,7 +155,7 @@ The API acts as a transformation layer between:
 
 The serverless function:
 
-1. receives domain from route params
+1. receives dimension from route params
 2. resolves insight directory path
 3. reads markdown files
 4. sorts files chronologically
@@ -172,7 +172,7 @@ const dirPath = path.join(
   "client",
   "public",
   "insights",
-  domain,
+  dimension,
   "insights"
 );
 ```
@@ -190,7 +190,7 @@ This ensures:
 [
   {
     "title": "file-name",
-    "category": "domain",
+    "category": "dimension",
     "content": "markdown content"
   }
 ]
@@ -202,7 +202,7 @@ This ensures:
 
 Frontend responsibilities:
 
-- domain exploration
+- dimension exploration
 - insight listing
 - markdown rendering
 - reading flow management
@@ -218,9 +218,9 @@ Routes:
 
 ```txt
 /
-/domains
-/domain/:name
-/domain/:name/insights
+/dimensions
+/dimension/:name
+/dimension/:name/insights
 /why-this-exists
 /how-to-use-insights
 ```
@@ -234,9 +234,9 @@ The system intentionally follows a layered navigation structure:
 ```txt
 Home
   ↓
-Domains
+dimensions
   ↓
-Domain
+dimension
   ↓
 Insights
   ↓
@@ -395,14 +395,14 @@ CSS controls:
 
 ---
 
-## 7. Domain Architecture
+## 7. dimension Architecture
 
-Domains separate different engineering understanding layers.
+dimensions separate different engineering understanding layers.
 
 The platform intentionally distinguishes between:
 
-- domain-specific knowledge
-- cross-domain insights
+- dimension-specific knowledge
+- cross-dimension insights
 - engineering reflections
 - debugging-driven lessons
 
@@ -415,7 +415,7 @@ Purpose:
 
 ---
 
-### Current Domains
+### Current dimensions
 
 ```txt
 frontend
@@ -607,7 +607,7 @@ Future evolution may include:
 - search layer
 - insight tagging
 - graph relationships between insights
-- domain analytics
+- dimension analytics
 - insight dependency mapping
 
 while preserving:
@@ -621,13 +621,13 @@ while preserving:
 The platform separates:
 
 ```txt
-Domain Knowledge
+dimension Knowledge
 ```
 
 from:
 
 ```txt
-Cross-Domain Insight
+Cross-dimension Insight
 ```
 
 Example:
@@ -644,7 +644,7 @@ Stored In:
 Meta Learning
 ```
 
-Meta Learning exists to preserve insights discovered while learning one domain but applicable across many domains.
+Meta Learning exists to preserve insights discovered while learning one dimension but applicable across many dimensions.
 
 This prevents valuable engineering lessons from becoming trapped inside a single technical category.
 
@@ -652,24 +652,24 @@ Purpose:
 
 - preserve transferable understanding
 - capture engineering thinking patterns
-- store cross-domain realizations
+- store cross-dimension realizations
 - improve long-term learning quality
 
 The architecture therefore supports two forms of knowledge:
 
 ```txt
-Domain-Specific Knowledge
+dimension-Specific Knowledge
 ```
 
 and
 
 ```txt
-Domain-Independent Learning Insights
+dimension-Independent Learning Insights
 ```
 
 This distinction enables the platform to evolve beyond a traditional note-taking system into a structured engineering understanding system.
 
-The Meta Learning domain serves as a knowledge abstraction layer where insights are categorized based on applicability rather than origin.
+The Meta Learning dimension serves as a knowledge abstraction layer where insights are categorized based on applicability rather than origin.
 
 ---
 

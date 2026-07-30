@@ -7,19 +7,19 @@ function HowToUseInsights() {
     <div className="app-container">
 
       {/* HERO */}
-      <div className="domains-hero">
+      <div className="dimensions-hero">
 
-        <p className="domains-tag">
+        <p className="dimensions-tag">
           Reading Approach
         </p>
 
-        <h1 className="domains-title">
+        <h1 className="dimensions-title">
           Don’t read insights
           <br />
           like content.
         </h1>
 
-        <p className="domains-sub">
+        <p className="dimensions-sub">
           This system is designed to develop engineering understanding,
           not passive consumption.
         </p>
@@ -27,7 +27,7 @@ function HowToUseInsights() {
       </div>
 
       {/* SECTION 1 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           The wrong way to approach insights
@@ -52,7 +52,7 @@ function HowToUseInsights() {
       </div>
 
       {/* SECTION 2 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           What to focus on while reading
@@ -91,14 +91,14 @@ function HowToUseInsights() {
       </div>
 
       {/* SECTION 3 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
-          Read across domains intentionally
+          Read across dimensions intentionally
         </h2>
 
         <p>
-          Different domains represent different engineering layers.
+          Different dimensions represent different engineering layers.
         </p>
 
         <p>
@@ -124,7 +124,7 @@ function HowToUseInsights() {
       </div>
 
       {/* SECTION 4 */}
-      <div className="domain-section-card">
+      <div className="dimension-section-card">
 
         <h2>
           Extract patterns, not isolated facts
@@ -154,7 +154,7 @@ function HowToUseInsights() {
       </div>
 
       {/* FINAL */}
-      <div className="domains-footer">
+      <div className="dimensions-footer">
 
         <h2>
           Final Understanding

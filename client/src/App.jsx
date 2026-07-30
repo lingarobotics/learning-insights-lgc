@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import Home from "./pages/Home";
-import DomainsPage from "./pages/DomainsPage";
-import DomainPage from "./pages/DomainPage";
+import DimensionsPage from "./pages/DimensionsPage";
+import DimensionPage from "./pages/DimensionPage";
 import InsightsPage from "./pages/InsightsPage";
 import WhyThisExists from "./pages/WhyThisExists";
 import HowToUseInsights from "./pages/HowToUseInsights";
@@ -44,21 +44,21 @@ function App() {
           element={<Home />}
         />
 
-        {/* DOMAINS EXPLORER */}
+        {/* DIMENSIONS EXPLORER */}
         <Route
-          path="/domains"
-          element={<DomainsPage />}
+          path="/dimensions"
+          element={<DimensionsPage />}
         />
 
-        {/* SINGLE DOMAIN */}
+        {/* SINGLE DIMENSION */}
         <Route
-          path="/domain/:name"
-          element={<DomainPage />}
+          path="/dimension/:name"
+          element={<DimensionPage />}
         />
 
-        {/* DOMAIN INSIGHTS */}
+        {/* DIMENSION INSIGHTS */}
         <Route
-          path="/domain/:name/insights"
+          path="/dimension/:name/insights"
           element={<InsightsPage />}
         />
 

@@ -335,15 +335,15 @@ html {
 }
 
 /* ===================================== */
-/* 🔥 DOMAINS PAGE */
+/* 🔥 dimensionS PAGE */
 /* ===================================== */
 
-.domains-hero {
+.dimensions-hero {
   padding-top: 3rem;
   padding-bottom: 4rem;
 }
 
-.domains-tag {
+.dimensions-tag {
   color: #38bdf8;
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -351,7 +351,7 @@ html {
   margin-bottom: 1rem;
 }
 
-.domains-title {
+.dimensions-title {
   font-size: 3.2rem;
   line-height: 1.08;
   font-weight: 700;
@@ -359,7 +359,7 @@ html {
   max-width: 800px;
 }
 
-.domains-sub {
+.dimensions-sub {
   margin-top: 1.5rem;
   max-width: 760px;
 
@@ -369,10 +369,10 @@ html {
 }
 
 /* ===================================== */
-/* 🔥 DOMAINS GRID */
+/* 🔥 dimensionS GRID */
 /* ===================================== */
 
-.domains-grid {
+.dimensions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
@@ -381,10 +381,10 @@ html {
 }
 
 /* ===================================== */
-/* 🔥 DOMAIN CARD */
+/* 🔥 dimension CARD */
 /* ===================================== */
 
-.domain-explorer-card {
+.dimension-explorer-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -409,7 +409,7 @@ html {
     box-shadow 0.28s ease;
 }
 
-.domain-explorer-card:hover {
+.dimension-explorer-card:hover {
   transform: translateY(-5px);
 
   border-color: rgba(56, 189, 248, 0.45);
@@ -419,35 +419,35 @@ html {
     0 0 30px rgba(56, 189, 248, 0.08);
 }
 
-.domain-explorer-card h2 {
+.dimension-explorer-card h2 {
   font-size: 1.35rem;
   color: #f8fafc;
   margin-bottom: 1rem;
 }
 
-.domain-explorer-card p {
+.dimension-explorer-card p {
   color: #94a3b8;
   line-height: 1.8;
   font-size: 0.98rem;
 }
 
 /* ===================================== */
-/* 🔥 DOMAINS FOOTER */
+/* 🔥 dimensionS FOOTER */
 /* ===================================== */
 
-.domains-footer {
+.dimensions-footer {
   margin-top: 5rem;
   padding-top: 3rem;
 
   border-top: 1px solid rgba(148, 163, 184, 0.08);
 }
 
-.domains-footer h2 {
+.dimensions-footer h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.domains-footer p {
+.dimensions-footer p {
   color: #94a3b8;
   line-height: 1.9;
 }
@@ -458,41 +458,41 @@ html {
 
 @media (max-width: 768px) {
 
-  .domains-hero {
+  .dimensions-hero {
     padding-top: 1rem;
     padding-bottom: 2.5rem;
   }
 
-  .domains-title {
+  .dimensions-title {
     font-size: 2.2rem;
     line-height: 1.15;
   }
 
-  .domains-sub {
+  .dimensions-sub {
     font-size: 1rem;
     line-height: 1.8;
   }
 
-  .domains-grid {
+  .dimensions-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  .domain-explorer-card {
+  .dimension-explorer-card {
     min-height: auto;
     padding: 1.2rem;
   }
 
-  .domain-explorer-card h2 {
+  .dimension-explorer-card h2 {
     font-size: 1.15rem;
   }
 
-  .domain-explorer-card p {
+  .dimension-explorer-card p {
     font-size: 0.94rem;
     line-height: 1.7;
   }
 
-  .domains-footer {
+  .dimensions-footer {
     margin-top: 3rem;
     padding-top: 2rem;
   }
@@ -626,7 +626,7 @@ html {
 /* 🔥 WHY THIS EXISTS PAGE */
 /* ===================================== */
 
-.domain-section-card {
+.dimension-section-card {
   margin-top: 2rem;
 
   padding: 2rem;
@@ -650,7 +650,7 @@ html {
 /* 🔥 SECTION CONTENT */
 /* ===================================== */
 
-.domain-section-card h2 {
+.dimension-section-card h2 {
   font-size: 1.7rem;
   line-height: 1.3;
 
@@ -659,7 +659,7 @@ html {
   margin-bottom: 1.2rem;
 }
 
-.domain-section-card p {
+.dimension-section-card p {
   color: #94a3b8;
 
   line-height: 1.95;
@@ -669,12 +669,12 @@ html {
   max-width: 760px;
 }
 
-.domain-section-card ul {
+.dimension-section-card ul {
   margin-top: 1.2rem;
   padding-left: 1.4rem;
 }
 
-.domain-section-card li {
+.dimension-section-card li {
   margin-bottom: 0.8rem;
 
   color: #cbd5e1;
@@ -686,8 +686,8 @@ html {
 /* 🔥 BLOCKQUOTE */
 /* ===================================== */
 
-.domain-section-card blockquote,
-.domains-footer blockquote {
+.dimension-section-card blockquote,
+.dimensions-footer blockquote {
   margin-top: 1.5rem;
 
   padding-left: 1rem;
@@ -704,21 +704,21 @@ html {
 /* 🔥 FOOTER REFINEMENT */
 /* ===================================== */
 
-.domains-footer {
+.dimensions-footer {
   margin-top: 4rem;
   padding-top: 3rem;
 
   border-top: 1px solid rgba(148, 163, 184, 0.08);
 }
 
-.domains-footer h2 {
+.dimensions-footer h2 {
   font-size: 1.7rem;
   margin-bottom: 1rem;
 
   color: #f8fafc;
 }
 
-.domains-footer p {
+.dimensions-footer p {
   color: #94a3b8;
   line-height: 1.9;
 }
@@ -729,36 +729,36 @@ html {
 
 @media (max-width: 768px) {
 
-  .domain-section-card {
+  .dimension-section-card {
     padding: 1.4rem;
     border-radius: 18px;
   }
 
-  .domain-section-card h2 {
+  .dimension-section-card h2 {
     font-size: 1.35rem;
     line-height: 1.4;
   }
 
-  .domain-section-card p,
-  .domain-section-card li {
+  .dimension-section-card p,
+  .dimension-section-card li {
     font-size: 0.96rem;
     line-height: 1.8;
   }
 
-  .domain-section-card blockquote,
-  .domains-footer blockquote {
+  .dimension-section-card blockquote,
+  .dimensions-footer blockquote {
     font-size: 1rem;
     line-height: 1.7;
   }
 
-  .domains-footer {
+  .dimensions-footer {
     margin-top: 3rem;
     padding-top: 2rem;
   }
 
 }
 
-.domains-back-home {
+.dimensions-back-home {
   margin-top: 3rem;
 
   display: flex;
@@ -780,10 +780,10 @@ html {
 }
 
 /* ===================================== */
-/* 🔥 DOMAIN CTA SECTION */
+/* 🔥 dimension CTA SECTION */
 /* ===================================== */
 
-.domain-cta {
+.dimension-cta {
   margin-top: 3rem;
 
   display: flex;
@@ -795,7 +795,7 @@ html {
 /* 🔥 PRIMARY ACTION */
 /* ===================================== */
 
-.domain-cta .button:first-child {
+.dimension-cta .button:first-child {
   min-width: 180px;
 
   font-weight: 600;
@@ -808,7 +808,7 @@ html {
 /* 🔥 SECONDARY NAVIGATION */
 /* ===================================== */
 
-.domain-navigation-row {
+.dimension-navigation-row {
   margin-top: 1rem;
 
   display: flex;
@@ -846,7 +846,7 @@ html {
 /* 🔥 BLOCKQUOTE SPACING */
 /* ===================================== */
 
-.domain-section-card blockquote {
+.dimension-section-card blockquote {
   margin-top: 1rem;
 
   max-width: 760px;
@@ -858,20 +858,20 @@ html {
 
 @media (max-width: 768px) {
 
-  .domain-cta {
+  .dimension-cta {
     align-items: stretch;
   }
 
-  .domain-cta .button:first-child {
+  .dimension-cta .button:first-child {
     width: 100%;
   }
 
-  .domain-navigation-row {
+  .dimension-navigation-row {
     flex-direction: column;
     width: 100%;
   }
 
-  .domain-navigation-row .button {
+  .dimension-navigation-row .button {
     width: 100%;
   }
 

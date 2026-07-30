@@ -18,19 +18,23 @@ function Home() {
           />
 
           <div>
+
             <h1 className="landing-title">
               Learn With Linga — Engineering Insights
             </h1>
+
             <p className="landing-version">
-              Version 1.1
+              12 Dimensions • 50+ Insights • Engineering Realizations
             </p>
 
             <p className="landing-sub">
-              Not tutorials. Not notes.
-              <br />
-              Just the insights that actually matter
-              while learning and building systems.
+              A curated collection of 50+ engineering insights
+              discovered while learning computer science,
+              building software systems, debugging failures,
+              and understanding why modern systems are designed
+              the way they are.
             </p>
+
           </div>
 
         </div>
@@ -43,24 +47,25 @@ function Home() {
         <div className="home-navigation-card home-primary-card">
 
           <p className="home-navigation-tag">
-            Main Exploration
+            Engineering Dimensions
           </p>
 
           <h2>
-            Explore Engineering Domains
+            Explore Engineering Insights
           </h2>
 
           <p>
-            Browse structured engineering insights organized
-            across systems, architecture, debugging,
-            projects, reasoning, and learning domains.
+            Discover engineering realizations organized across
+            frontend, backend, DSA, AI, databases, cloud,
+            projects, debugging, communication, and
+            engineering mindset.
           </p>
 
           <button
             className="button"
-            onClick={() => navigate("/domains")}
+            onClick={() => navigate("/dimensions")}
           >
-            Explore Domains
+            Explore Insights
           </button>
 
         </div>
@@ -78,20 +83,22 @@ function Home() {
           </p>
 
           <h2>
-            Why This Insight System Exists
+            Why Engineering Insights Exists
           </h2>
 
           <p>
-            Understand the purpose behind this platform,
-            the problems it tries to solve,
-            and the engineering mindset behind its structure.
+            Learn the philosophy behind this repository,
+            why these insights are preserved,
+            and how engineering understanding evolves
+            through curiosity, experimentation,
+            failures, and reflection.
           </p>
 
           <button
             className="button secondary-button"
             onClick={() => navigate("/why-this-exists")}
           >
-            Open Philosophy
+            Explore Philosophy
           </button>
 
         </div>
@@ -100,24 +107,25 @@ function Home() {
         <div className="home-navigation-card">
 
           <p className="home-navigation-tag">
-            Reading Approach
+            Reading Guide
           </p>
 
           <h2>
-            How To Extract Insights Properly
+            How To Learn From These Insights
           </h2>
 
           <p>
-            Learn how these insights should be approached,
-            interpreted, connected, and used for deeper
-            engineering understanding.
+            Understand how to approach each insight,
+            connect ideas across engineering dimensions,
+            and transform individual realizations into
+            deeper engineering intuition.
           </p>
 
           <button
             className="button secondary-button"
             onClick={() => navigate("/how-to-use-insights")}
           >
-            Learn How To Read
+            Start Reading
           </button>
 
         </div>
@@ -140,7 +148,7 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LGC Systems - Umbrella platform for all LGC products
+              LGC Systems — Umbrella platform for all LGC products
             </a>
 
             <a
@@ -148,7 +156,7 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Founder Portfolio - Person behind Learn With Linga and LGC Systems
+              Founder Portfolio — Learn about the engineer behind Learn With Linga
             </a>
 
             <a
@@ -156,7 +164,7 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Hashnode Blog - Blogs and thoughts on engineering, learning, and systems
+              Hashnode Blog — Engineering articles, learning journeys, and technical reflections
             </a>
 
           </div>

@@ -48,7 +48,7 @@ This platform exists to:
 * connect concepts to real-world systems
 * document failures, fixes, and realizations
 * preserve reusable engineering lessons
-* capture insights that remain valuable across domains
+* capture insights that remain valuable across dimensions
 
 The goal is not to document everything.
 
@@ -76,7 +76,7 @@ Built using:
 
 Responsibilities:
 
-* domain exploration
+* dimension exploration
 * insight rendering
 * navigation hierarchy
 * reading experience
@@ -97,8 +97,8 @@ Responsibilities:
 
 * dynamically read markdown files
 * convert markdown into JSON
-* provide structured domain APIs
-* support domain-based content retrieval
+* provide structured dimension APIs
+* support dimension-based content retrieval
 
 ---
 
@@ -108,8 +108,8 @@ The platform uses:
 
 * markdown-based insights
 * filesystem organization
-* domain-driven categorization
-* README-driven domain descriptions
+* dimension-driven categorization
+* README-driven dimension descriptions
 
 There is:
 
@@ -169,7 +169,7 @@ This enables readers to see:
 learning-insights-lgc/
 ├── api/
 │   └── insights/
-│       └── [domain].js
+│       └── [dimension].js
 │
 ├── client/
 │   ├── public/
@@ -345,7 +345,7 @@ This platform exists to:
 * connect concepts to real-world systems
 * document failures, fixes, and realizations
 * preserve reusable engineering lessons
-* capture insights that remain valuable across domains
+* capture insights that remain valuable across dimensions
 
 The goal is not to document everything.
 
@@ -373,7 +373,7 @@ Built using:
 
 Responsibilities:
 
-* domain exploration
+* dimension exploration
 * insight rendering
 * navigation hierarchy
 * reading experience
@@ -394,8 +394,8 @@ Responsibilities:
 
 * dynamically read markdown files
 * convert markdown into JSON
-* provide structured domain APIs
-* support domain-based content retrieval
+* provide structured dimension APIs
+* support dimension-based content retrieval
 
 ---
 
@@ -405,8 +405,8 @@ The platform uses:
 
 * markdown-based insights
 * filesystem organization
-* domain-driven categorization
-* README-driven domain descriptions
+* dimension-driven categorization
+* README-driven dimension descriptions
 
 There is:
 
@@ -466,7 +466,7 @@ This enables readers to see:
 learning-insights-lgc/
 ├── api/
 │   └── insights/
-│       └── [domain].js
+│       └── [dimension].js
 │
 ├── client/
 │   ├── public/
@@ -699,7 +699,7 @@ The platform evolves toward:
 * a portfolio of engineering thinking
 * proof of consistency and execution
 * a connected ecosystem under LGC Systems
-* cross-domain knowledge preservation
+* cross-dimension knowledge preservation
 * engineering reasoning documentation
 * evidence-backed learning
 
@@ -712,7 +712,7 @@ Future evolution may include:
 * insight tagging
 * search capabilities
 * metadata-driven organization
-* domain relationship mapping
+* dimension relationship mapping
 * insight dependency graphs
 * engineering knowledge navigation
 
@@ -794,11 +794,11 @@ because those tend to survive technology shifts.
 
 ## 🆕 What's New in Version 1.1
 
-Version 1.1 expands the platform beyond traditional engineering domains.
+Version 1.1 expands the platform beyond traditional engineering dimensions.
 
 New additions include:
 
-### New Domains
+### New dimensions
 
 * AI & ML
 * Cloud Concepts
@@ -806,8 +806,8 @@ New additions include:
 
 ### New Capabilities
 
-* README-driven domain descriptions
-* cross-domain insight preservation
+* README-driven dimension descriptions
+* cross-dimension insight preservation
 * learning evidence image support
 * proof-backed engineering insights
 
@@ -816,13 +816,13 @@ New additions include:
 The platform now preserves:
 
 ```txt
-Domain-Specific Knowledge
+dimension-Specific Knowledge
 ```
 
 and
 
 ```txt
-Domain-Independent Learning Insights
+dimension-Independent Learning Insights
 ```
 
 allowing valuable lessons to be stored based on applicability rather than origin.

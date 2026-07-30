@@ -110,7 +110,7 @@ function InsightsPage() {
       {/* HEADER */}
       <div className="header">
 
-        <p className="domains-tag">
+        <p className="dimensions-tag">
           Insight Archive
         </p>
 
@@ -144,13 +144,13 @@ function InsightsPage() {
           </div>
 
           {/* NAVIGATION */}
-          <div className="domain-navigation-row insights-navigation">
+          <div className="dimension-navigation-row insights-navigation">
 
             <button
               className="button secondary-button"
-              onClick={() => navigate(`/domain/${name}`)}
+              onClick={() => navigate(`/dimension/${name}`)}
             >
-              ← Back To Domain
+              ← Back To dimension
             </button>
 
             <button
