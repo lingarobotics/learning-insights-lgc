@@ -75,7 +75,7 @@ This pattern appears throughout software engineering.
 
 ### Backend Systems
 
-Services frequently pass references to domain objects between controllers, services, and repositories instead of copying entire objects.
+Services frequently pass references to dimension objects between controllers, services, and repositories instead of copying entire objects.
 
 ### Databases
 

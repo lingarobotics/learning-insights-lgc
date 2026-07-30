@@ -1,6 +1,6 @@
 # Meta Learning
 
-> Insights discovered while learning a specific domain but whose value extends beyond that domain.
+> Insights discovered while learning a specific dimension but whose value extends beyond that dimension.
 
 ---
 
@@ -8,10 +8,10 @@
 
 This section captures:
 
-* Cross-domain realizations
+* Cross-dimension realizations
 * Learning-driven insights
 * Engineering lessons discovered indirectly
-* Patterns observed across multiple domains
+* Patterns observed across multiple dimensions
 
 ---
 
@@ -20,11 +20,11 @@ This section captures:
 * Insights extracted during learning
 * Reasoning improvements
 * Understanding breakthroughs
-* Lessons that apply beyond a single domain
+* Lessons that apply beyond a single dimension
 * Engineering observations with broad applicability
 
 ---
 
 ## 🧠 Focus
 
-> “This insight was discovered while learning one domain, but remains useful across many domains.”
+> “This insight was discovered while learning one dimension, but remains useful across many dimensions.”

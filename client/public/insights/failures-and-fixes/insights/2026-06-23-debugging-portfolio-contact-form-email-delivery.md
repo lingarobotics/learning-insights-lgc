@@ -208,7 +208,7 @@ Reading the response body is often more valuable than looking only at the HTTP s
 
 ## 8. Sender Validation Issue
 
-![Sender Verification](/images/development-and-debugging-screenshots/verifying-domain-in-new-brevo-account-for-portfolio.png)
+![Sender Verification](/images/development-and-debugging-screenshots/verifying-dimension-in-new-brevo-account-for-portfolio.png)
 
 ### What happened
 
@@ -229,7 +229,7 @@ The sender email had not yet been verified.
 I verified:
 
 - Sender email
-- Domain
+- dimension
 - DNS configuration
 
 ---
@@ -283,7 +283,7 @@ The first email successfully arrived in my inbox.
 
 - Created a dedicated Brevo API key
 - Verified sender identity
-- Authenticated the sending domain
+- Authenticated the sending dimension
 
 ---
 

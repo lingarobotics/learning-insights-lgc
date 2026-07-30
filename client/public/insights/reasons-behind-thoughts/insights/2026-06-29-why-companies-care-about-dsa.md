@@ -70,7 +70,7 @@ Networking transfers data.
 
 Artificial Intelligence learns from and generates data.
 
-No matter how different software domains appear, they all return to one common element.
+No matter how different software dimensions appear, they all return to one common element.
 
 > Data.
 

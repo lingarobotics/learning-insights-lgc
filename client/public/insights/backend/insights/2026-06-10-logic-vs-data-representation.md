@@ -66,7 +66,7 @@ Logic
 Output
 ```
 
-Even perfect logic can produce incorrect output when the chosen representation does not accurately model the problem domain.
+Even perfect logic can produce incorrect output when the chosen representation does not accurately model the problem dimension.
 
 ---
 

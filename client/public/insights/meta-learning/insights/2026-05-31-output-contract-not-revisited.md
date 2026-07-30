@@ -2,7 +2,7 @@
 
 ---
 
-## 1. Source Domain Context
+## 1. Source dimension Context
 
 This insight was discovered while learning:
 
@@ -286,7 +286,7 @@ Output
 
 This lesson is not actually about embeddings.
 
-The same pattern can appear in any domain.
+The same pattern can appear in any dimension.
 
 ---
 
