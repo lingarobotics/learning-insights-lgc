@@ -157,7 +157,7 @@ Computationally, it wasn't.
 
 The submission ended with a **Time Limit Exceeded**.
 
-![Pure Recursion](/images/images-from-learning/triangle-01-pure-recursion.png)
+![Pure Recursion](/images/images-from-learning/triangle-pure-recursion-tle.png)
 
 Surprisingly, I wasn't disappointed.
 
@@ -305,7 +305,7 @@ which meant recursion kept recomputing states.
 
 Another Time Limit Exceeded.
 
-![DP Sentinel Bug](/images/images-from-learning/triangle-02-dp-sentinel-bug.png)
+![DP Sentinel Bug](/images/images-from-learning/triangle-dp-sentinel-bug-tle.png)
 
 That bug taught me something beyond this problem.
 
@@ -351,7 +351,7 @@ represents a valid computed answer.
 
 That small implementation change fixed the entire solution.
 
-![Accepted Solution](/images/images-from-learning/triangle-03-final-dp-accepted.png)
+![Accepted Solution](/images/images-from-learning/triangle-dp-accepted.png)
 
 ---
 
