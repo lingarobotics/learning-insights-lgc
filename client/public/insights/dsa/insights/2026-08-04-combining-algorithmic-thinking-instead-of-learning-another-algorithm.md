@@ -190,9 +190,38 @@ Maybe it's slowly becoming a habit.
 
 ---
 
-## 6. Final Solution
+## 6. Final Solution of 3Sum Closest 
 
 ![Accepted 3Sum Closest Solution](/images/images-from-learning/3sum-closest-sol.png)
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/3sum-closest/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/3sum-closest/solutions/8440694/thinking-in-patterns-combining-two-point-wqms/
+
+## 7. One More Confirmation
+
+A few minutes later, I became curious about **4Sum**.
+
+Instead of searching for its solution, I asked myself a different question.
+
+> "Can I extend the same idea once again?"
+
+In **3Sum**, I fixed one element before applying the Two Pointer technique.
+
+For **4Sum**, I simply fixed one more element and reused the same Two Pointer logic.
+
+The algorithm didn't feel new anymore.
+
+It felt like a natural extension of what I had already learned.
+
+That was probably the strongest confirmation of the realization from this article.
+
+I wasn't memorizing another algorithm.
+
+I was extending an existing one.
+
+### 4Sum
+
+![Accepted 4Sum Solution](/images/images-from-learning/4sum-sol.png)
+
+- 📖 **LeetCode Problem:** https://leetcode.com/problems/4sum/
+- 💻 **My Accepted Solution:** https://leetcode.com/problems/4sum/solutions/8440918/thinking-in-patterns-fix-two-elements-us-ryna/git
