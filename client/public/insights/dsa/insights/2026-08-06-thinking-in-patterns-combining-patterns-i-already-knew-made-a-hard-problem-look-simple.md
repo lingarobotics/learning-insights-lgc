@@ -622,3 +622,19 @@ I think that's the direction I want my learning to continue.
 Not collecting hundreds of isolated algorithms.
 
 But building a network of reusable patterns that naturally connect together whenever a new problem appears.
+
+---
+
+## Related LeetCode Solutions
+
+### 154. Find Minimum in Rotated Sorted Array II
+**Thinking in Patterns: When My Brain Connected Fixed & Moving Pointers with Current vs Best-So-Far**
+
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/8445644/thinking-in-patterns-when-my-brain-conne-q3nb/
+
+---
+
+### 169. Majority Element
+**Thinking in Patterns: The Problem's Guarantee Became the Solution**
+
+https://leetcode.com/problems/majority-element/solutions/8445424/thinking-in-patterns-the-problems-guaran-pmt7/
