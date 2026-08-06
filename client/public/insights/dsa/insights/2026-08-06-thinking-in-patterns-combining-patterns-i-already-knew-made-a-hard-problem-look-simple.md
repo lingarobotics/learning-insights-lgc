@@ -123,10 +123,6 @@ That question pushed me toward the real solution.
 
 ---
 
-![Finding Minimum by Sorting](images/images-from-learning/minimum-finding-sol-in-may-contain-duplicate-rotated-array.png)
-
----
-
 ## My First Serious Thought
 
 After leaving the sorting experiment behind,
