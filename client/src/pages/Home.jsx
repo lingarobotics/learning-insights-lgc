@@ -24,11 +24,11 @@ function Home() {
             </h1>
 
             <p className="landing-version">
-              12 Dimensions • 50+ Insights • Engineering Realizations
+              12 Dimensions • 60+ Insights • Engineering Realizations
             </p>
 
             <p className="landing-sub">
-              A curated collection of 50+ engineering insights
+              A curated collection of 60+ engineering insights
               discovered while learning computer science,
               building software systems, debugging failures,
               and understanding why modern systems are designed
@@ -152,7 +152,7 @@ function Home() {
             </a>
 
             <a
-              href="https://founder-portfolio.lgcsystems.xyz"
+              href="https://linga.engineer"
               target="_blank"
               rel="noopener noreferrer"
             >
