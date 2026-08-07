@@ -281,3 +281,15 @@ The thinking behind it isn't.
 Yet,
 
 the thinking is what truly deserves admiration.
+
+## Resources
+
+### Problem
+
+- **LeetCode 3348 – Smallest Divisible Digit Product II**
+  https://leetcode.com/problems/smallest-divisible-digit-product-ii
+
+### Inspiration
+
+- **"If someone asks this question in an interview, they don't want to hire you!!"** by the original author on LeetCode Solutions
+  https://leetcode.com/problems/smallest-divisible-digit-product-ii/solutions/8446017/if-someone-asks-this-ques-in-interview-t-1noe/
