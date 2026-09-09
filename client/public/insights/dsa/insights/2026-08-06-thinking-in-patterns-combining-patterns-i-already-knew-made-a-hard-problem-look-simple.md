@@ -634,3 +634,11 @@ https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solutions/
 **Thinking in Patterns: The Problem's Guarantee Became the Solution**
 
 https://leetcode.com/problems/majority-element/solutions/8445424/thinking-in-patterns-the-problems-guaran-pmt7/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

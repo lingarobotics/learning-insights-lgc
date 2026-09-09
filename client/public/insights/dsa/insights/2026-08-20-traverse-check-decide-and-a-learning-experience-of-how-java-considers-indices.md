@@ -239,3 +239,11 @@ Sometimes I just need to translate my thinking correctly into the language I'm u
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/distribute-elements-into-two-arrays-i/
 
 - 💻 **My Accepted Submission:** https://leetcode.com/problems/distribute-elements-into-two-arrays-i/submissions/2113986594/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -225,3 +225,11 @@ Responsibility creates opportunity.
 Viewed through that perspective, internships stop feeling like something to chase.
 
 They become something earned through consistent growth, demonstrated understanding, and the ability to contribute meaningfully.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

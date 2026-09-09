@@ -125,3 +125,11 @@ As software grows, choosing the right construct becomes as important as producin
 > Loops define how repetition is expressed. Choosing the right loop defines how clearly that repetition is understood.
 
 > Good engineering is not only about making code execute correctly—it is also about making the programmer's intent obvious to everyone who reads it later.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

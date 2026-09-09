@@ -195,3 +195,11 @@ Learning methods will continue to evolve.
 The ability to question, reason, document, adapt, and understand systems is what I intend to keep improving.
 
 Those habits are likely to remain valuable long after specific technologies have changed.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

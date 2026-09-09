@@ -135,3 +135,11 @@ Only reasoning can detect incorrect assumptions.
 > A running program is only the beginning of validation, not the end.
 
 > Whenever inputs change, outputs and assumptions should be re-evaluated with equal attention.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

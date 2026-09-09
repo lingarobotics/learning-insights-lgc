@@ -191,3 +191,11 @@ Start thinking:
 > Column-based INSERT gives control and reduces errors
 
 > Data insertion is governed by schema, not by intention
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

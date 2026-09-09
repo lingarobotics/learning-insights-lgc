@@ -191,3 +191,11 @@ Start thinking:
 > Backend logic controls how queries are formed and executed
 
 > Understanding data flow is more important than memorizing query syntax
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

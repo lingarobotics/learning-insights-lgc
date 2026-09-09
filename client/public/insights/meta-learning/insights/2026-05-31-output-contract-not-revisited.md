@@ -425,3 +425,11 @@ But the actual insight has nothing to do with embeddings.
 The real learning was:
 
 > When requirements change, assumptions about outputs must be questioned just as carefully as assumptions about inputs.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

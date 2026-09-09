@@ -418,3 +418,11 @@ I recognized the same general pattern from Stone Game II — **recursion + Top-D
 **Problem:** https://leetcode.com/problems/stone-game-iv/
 
 **My solution:**https://leetcode.com/problems/stone-game-iv/solutions/8452840/thinking-in-patterns-another-stone-game-fq0ke/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

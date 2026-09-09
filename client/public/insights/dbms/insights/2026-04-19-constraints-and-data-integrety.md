@@ -192,3 +192,11 @@ Start thinking:
 > Don’t trust application logic alone — enforce correctness at the database level
 
 > Data integrity is not maintained by code — it is enforced by structure
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

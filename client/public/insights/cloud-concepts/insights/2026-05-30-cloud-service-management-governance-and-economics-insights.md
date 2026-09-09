@@ -362,3 +362,11 @@ After completing the syllabus, I realized that successful cloud adoption depends
 Learning the definitions helps in examinations.
 
 Understanding **how every concept contributes to the complete cloud lifecycle** builds long-term engineering intuition.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

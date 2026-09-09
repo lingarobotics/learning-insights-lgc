@@ -205,3 +205,11 @@ Start asking:
 > Don’t ask “how many operations now” — ask “how will this behave when input becomes huge”
 
 > Data Structures + Algorithms together define system scalability
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

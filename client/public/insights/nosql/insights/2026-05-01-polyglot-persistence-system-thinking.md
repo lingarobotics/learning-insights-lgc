@@ -195,3 +195,11 @@ Start thinking:
 > No single database can solve all problems efficiently
 
 > Strong systems are built by combining tools, not relying on one
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -131,3 +131,11 @@ As a result, they attempt to fix logic that was never actually broken.
 > Correct logic built on the wrong representation can still produce incorrect results.
 
 > Before debugging algorithms, verify that the data type and representation actually match the problem being solved.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

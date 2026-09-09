@@ -912,3 +912,11 @@ And perhaps that's what I want to keep getting better at:
 * 💻 **My First Approach:** https://leetcode.com/problems/sign-of-the-product-of-an-array/solutions/8507861/thinking-in-patterns-when-the-product-is-mo4k/
 
 * 🧮 **My Second Approach — Thinking Mathematically:** https://leetcode.com/problems/sign-of-the-product-of-an-array/solutions/8508215/thinking-mathematically-school-math-abou-ncm0/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

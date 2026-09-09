@@ -326,3 +326,11 @@ That is the kind of pattern recognition I want to keep developing.
 **Problem in Leetcode with description**: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
 **Thinking in Patterns: I Saw Two Pointers, Then Combined It with Binary Search**: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/solutions/8452922/thinking-in-patterns-i-saw-two-pointers-rzaau/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

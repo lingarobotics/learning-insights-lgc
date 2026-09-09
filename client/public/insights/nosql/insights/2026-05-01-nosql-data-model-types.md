@@ -174,3 +174,11 @@ Start thinking:
 > Each model is optimized for a specific type of problem
 
 > Choosing the right database starts with understanding your data, not the tool
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

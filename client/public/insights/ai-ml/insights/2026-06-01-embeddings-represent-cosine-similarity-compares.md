@@ -521,3 +521,11 @@ The most important realization was:
 And underneath almost every concept explored today:
 
 > Mathematics is the foundation.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

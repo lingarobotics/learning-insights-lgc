@@ -138,3 +138,11 @@ Recognizing reusable patterns makes learning algorithms much easier and prepares
 > Array traversal is the foundation. Most introductory array algorithms are simply different decisions made during that traversal.
 
 > Good engineers recognize reusable patterns instead of memorizing isolated solutions.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

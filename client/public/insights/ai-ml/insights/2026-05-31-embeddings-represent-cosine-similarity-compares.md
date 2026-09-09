@@ -420,3 +420,11 @@ The biggest realization was:
 > The AI is not comparing text.
 
 > The AI is comparing vectors that represent the text.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

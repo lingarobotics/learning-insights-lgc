@@ -193,3 +193,11 @@ Those lessons will stay useful long after I forget this particular problem.
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/smallest-divisible-digit-product-i/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/smallest-divisible-digit-product-i/solutions/8444548/thinking-in-patterns-let-the-problems-co-viw5/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

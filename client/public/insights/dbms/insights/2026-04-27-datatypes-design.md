@@ -228,3 +228,11 @@ Start thinking:
 > They control limits, validation, and system efficiency
 
 > Choosing the right datatype is a core design decision
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -180,3 +180,11 @@ Start thinking:
 > Structure determines consistency, not just storage
 
 > Good design prevents anomalies before they occur
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

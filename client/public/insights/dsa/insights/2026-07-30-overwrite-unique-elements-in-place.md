@@ -206,3 +206,11 @@ That small habit prevents many `ArrayIndexOutOfBoundsException`s before they eve
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/remove-duplicates-from-sorted-array/solutions/8431140/thinking-in-pattern-two-pointer-overwrit-p2xo/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -350,3 +350,11 @@ It is built by:
 - questioning assumptions
 - understanding architecture
 - and learning to direct tools intentionally
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

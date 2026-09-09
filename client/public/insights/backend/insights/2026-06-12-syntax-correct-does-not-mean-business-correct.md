@@ -146,3 +146,11 @@ It cannot detect incorrect assumptions.
 > A successful compilation proves syntax. It does not prove correctness.
 
 > Always validate results against business expectations, not just compiler output.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -168,3 +168,11 @@ As software grows, reducing duplication becomes just as important as producing t
 > Good class design is less about writing more code and more about deciding where important logic should live.
 
 > Many Java features—private methods, constructor chaining, Boolean-valued methods, and enumerations—are different tools for maintaining a single source of truth within a class.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

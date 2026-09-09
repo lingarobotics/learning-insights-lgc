@@ -137,3 +137,11 @@ As software grows, preserving data becomes more valuable than the initial comput
 > Arrays are not merely containers. They preserve information so that multiple independent computations can be performed on the same dataset.
 
 > Good engineering often begins by asking not only how to process data, but whether that data should be preserved for future work.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

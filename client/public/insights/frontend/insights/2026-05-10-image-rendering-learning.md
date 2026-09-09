@@ -246,3 +246,11 @@ It is also about understanding:
 - how tooling processes code
 - how runtime context affects rendering
 - and how different frontend layers interact together
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

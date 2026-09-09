@@ -140,3 +140,11 @@ Reliable software comes from questioning assumptions, not just writing code.
 > Correct programs solve expected cases. Robust programs survive unexpected ones.
 
 > Good engineering is not just about making software work. It is about making software continue working when reality refuses to cooperate.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

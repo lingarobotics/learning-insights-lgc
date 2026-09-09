@@ -247,3 +247,11 @@ Start thinking:
 > A → B means A uniquely decides B
 
 > Understanding dependencies is the foundation for normalization and database design
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

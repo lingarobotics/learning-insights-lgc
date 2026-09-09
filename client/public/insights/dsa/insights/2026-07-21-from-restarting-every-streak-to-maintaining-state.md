@@ -200,3 +200,11 @@ there's often a better way.
 > Before starting over, ask whether the previous iteration already contains the information you need.
 
 > Efficient algorithms often come from avoiding repeated computation, not from writing more complex code.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

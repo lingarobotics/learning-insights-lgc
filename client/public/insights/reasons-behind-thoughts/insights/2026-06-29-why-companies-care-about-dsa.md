@@ -285,3 +285,11 @@ Data structures exist to organize it.
 Algorithms exist to process it efficiently.
 
 And companies value engineers who can make thoughtful decisions about all three.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

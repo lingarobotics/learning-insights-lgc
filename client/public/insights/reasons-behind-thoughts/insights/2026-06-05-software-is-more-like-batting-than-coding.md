@@ -217,3 +217,11 @@ Great engineers don't only build systems.
 They understand them.
 
 The deeper my learning progresses, the more software engineering appears to be a discipline of reasoning, prediction, and systems thinking rather than programming alone.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

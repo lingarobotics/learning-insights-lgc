@@ -489,3 +489,11 @@ I realized that security is fundamentally about understanding problems first and
 Learning the definitions helped me answer questions.
 
 Understanding **why those mechanisms exist** helped me develop stronger engineering intuition while also making exam preparation much easier.q
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

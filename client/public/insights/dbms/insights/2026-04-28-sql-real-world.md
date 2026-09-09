@@ -211,3 +211,11 @@ Start thinking:
 > Every query maps to a real system behavior
 
 > Understanding improves when queries are seen as actions, not syntax
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -228,3 +228,11 @@ It comes from avoiding the comparisons altogether.
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/contains-duplicate/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/contains-duplicate/solutions/8438806/thinking-in-patterns-have-i-seen-this-be-d3bp/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

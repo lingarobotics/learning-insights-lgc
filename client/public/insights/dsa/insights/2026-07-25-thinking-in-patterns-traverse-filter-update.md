@@ -261,3 +261,11 @@ And that's the lesson I wanted to remember.
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/prime-in-diagonal/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/prime-in-diagonal/solutions/8418432/thinking-in-patterns-traverse-filter-upd-nz22/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

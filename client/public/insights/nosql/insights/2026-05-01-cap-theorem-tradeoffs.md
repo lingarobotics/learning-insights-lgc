@@ -211,3 +211,11 @@ Start thinking:
 > You cannot guarantee consistency and availability during network failures
 
 > System design is about choosing what matters under failure
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

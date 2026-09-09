@@ -605,3 +605,11 @@ The most important realization was:
 > Finding the right vectors efficiently is the real challenge.
 
 And that challenge is exactly why vector databases like ChromaDB exist.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -223,3 +223,11 @@ The future doesn't belong to those who reject AI.
 Nor to those who surrender to it.
 
 It belongs to engineers who leverage AI while continuing to own the systems they build.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

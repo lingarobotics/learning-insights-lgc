@@ -1,6 +1,4 @@
----
-title: "Thinking Mathematically: Counting Commas Through Number Ranges — O(1) Despite Suggested O(log N)"
-date: 2026-09-08
+
 ---
 
 # Thinking Mathematically: Counting Commas Through Number Ranges — O(1) Despite Suggested O(log N)
@@ -826,3 +824,11 @@ It tells me that I am not only getting accepted solutions, but I am also becomin
 
 - [Count Commas in Range — Part I: Thinking Mathematically Instead of Counting](https://leetcode.com/problems/count-commas-in-range/solutions/8510425/thinking-mathematically-instead-of-count-wrvc/)
 - [Count Commas in Range II — My Part II Solution](https://leetcode.com/problems/count-commas-in-range-ii/solutions/8511545/thinking-mathematically-counting-commas-seywg/)
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

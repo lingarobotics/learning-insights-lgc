@@ -171,3 +171,11 @@ Experienced engineers focus on progress rather than syntax.
 Both concepts reinforce the same engineering principle:
 
 > A reliable system is built by making program behavior observable, predictable, and easy to reason about.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

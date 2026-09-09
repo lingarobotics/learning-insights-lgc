@@ -193,3 +193,11 @@ Start thinking:
 > Understanding usage patterns is critical for choosing the right database
 
 > System performance depends on optimizing the dominant operation
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

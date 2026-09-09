@@ -199,3 +199,11 @@ Every accepted solution has a lesson buried within it. You just have to dig deep
 > Preventing unnecessary states often removes the need for correction.
 
 > Learning doesn't stop after "Accepted"—sometimes that's where the most valuable insights begin.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

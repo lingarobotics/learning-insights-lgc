@@ -129,3 +129,11 @@ Understanding the purpose of the loop becomes more important than the loop synta
 > Loops are not just repetition constructs. They model different categories of processes found in software systems.
 
 > Good engineering is often about choosing the right looping strategy to match the nature of the problem, rather than using the same style of loop everywhere.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

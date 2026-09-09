@@ -179,3 +179,11 @@ Start thinking:
 > FROM → WHERE → SELECT → DISTINCT → ORDER BY defines behavior
 
 > Understanding execution order is key to writing correct queries
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

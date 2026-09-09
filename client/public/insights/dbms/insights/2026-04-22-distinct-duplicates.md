@@ -178,3 +178,11 @@ Start thinking:
 > DISTINCT is required to enforce uniqueness in output
 
 > Data cleanliness is controlled by query logic, not by default behavior
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

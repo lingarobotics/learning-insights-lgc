@@ -358,3 +358,11 @@ It was about:
 > Moving from coding → system thinking
 
 ---
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

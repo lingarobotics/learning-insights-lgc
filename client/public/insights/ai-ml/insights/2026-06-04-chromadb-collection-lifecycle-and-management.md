@@ -541,3 +541,11 @@ Understanding how collections are created, reused, loaded, managed, and safely d
 Learning the API is useful.
 
 Understanding **why the API is designed that way** is what builds long-term engineering intuition.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

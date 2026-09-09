@@ -182,3 +182,11 @@ Start thinking:
 > It is not a replacement for SQL — it complements it
 
 > Database choice is not about preference — it is about system requirements
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -141,3 +141,11 @@ The implementation details become increasingly important as systems grow.
 > Interfaces define what a system does. Implementations determine the cost of doing it.
 
 > Good engineering is often the art of choosing the right tradeoff, not finding a perfect solution.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -318,3 +318,11 @@ It requires:
 A simple **"Send Message"** button ultimately relies on multiple systems working together.
 
 If any one of them fails, the entire feature appears broken—even when the application code itself is correct.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

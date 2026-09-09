@@ -382,3 +382,11 @@ That made this learning feel organic instead of memorized.
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/triangle/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/triangle/solutions/8437308/triangle-problem-from-greedy-recursive-d-jxze/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

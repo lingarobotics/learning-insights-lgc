@@ -182,3 +182,11 @@ Start thinking:
 > Database may modify or reject values to maintain structure
 
 > Data types are constraints on storage, not just labels
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -138,3 +138,11 @@ Understanding references is essential for reasoning about object-oriented progra
 > Objects represent data. References provide access to that data.
 
 > Efficient software often shares objects through references instead of creating unnecessary copies, reducing memory usage while keeping data consistent across the system.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

@@ -225,3 +225,11 @@ I was extending an existing one.
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/4sum/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/4sum/solutions/8440918/thinking-in-patterns-fix-two-elements-us-ryna/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

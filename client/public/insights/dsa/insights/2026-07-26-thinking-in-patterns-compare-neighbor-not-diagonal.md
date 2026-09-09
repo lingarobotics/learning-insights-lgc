@@ -185,3 +185,11 @@ They verified themselves through local comparisons.
 
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/toeplitz-matrix/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/toeplitz-matrix/solutions/8420990/compare-every-diagonal-neighbor-by-linga-v5i5/
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)

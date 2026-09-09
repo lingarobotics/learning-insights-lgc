@@ -1,0 +1,52 @@
+name: Add author footers
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-author-footers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Add missing author footers
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git status --porcelain=v1 --untracked-files=all \
+            | sed -E 's/^.. //' \
+            | sort -u > before-files.txt
+
+          node scripts/add-author-footer.js | tee author-footer-output.txt
+          awk -F '\t' '$1 == "MODIFIED" { print $2 }' author-footer-output.txt \
+            | sort -u > reported-files.txt
+          comm -23 reported-files.txt before-files.txt > files-to-commit.txt
+
+          if [[ ! -s files-to-commit.txt ]]; then
+            echo 'No new article files were modified.'
+            exit 0
+          fi
+
+          git add --pathspec-from-file=files-to-commit.txt
+          git diff --cached --name-only | sort -u > staged-files.txt
+          if ! cmp -s files-to-commit.txt staged-files.txt; then
+            echo 'The staged file set did not match the author-footer file set.' >&2
+            exit 1
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'DOCS: add missing author footer'
+          git push

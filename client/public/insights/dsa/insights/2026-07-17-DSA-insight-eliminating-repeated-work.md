@@ -275,3 +275,11 @@ Most efficient algorithms are simply answers to those two questions.
 > Mathematical notation often maps directly to programming functions.
 
 > Good algorithms don't perform less work by magic—they avoid doing the same work twice.
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)
