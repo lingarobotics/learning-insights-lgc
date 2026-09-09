@@ -11,11 +11,11 @@ const footer = [
   '',
   '**Ramalingam Jayavelu**',
   '',
-  'Portfolio: [linga.engineer](https://linga.engineer)',
-  'GitHub: [github.linga.engineer](https://github.linga.engineer)',
-  'LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)',
-  'LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)',
-  'Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)',
+  'Portfolio: [linga.engineer](https://linga.engineer)  ',
+  'GitHub: [github.linga.engineer](https://github.linga.engineer)  ',
+  'LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)  ',
+  'LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)  ',
+  'Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)  ',
   'Email: [contact@linga.engineer](mailto:contact@linga.engineer)',
   '',
 ].join('\n');
@@ -37,11 +37,16 @@ const currentFooter = [
   '',
   'Portfolio: [linga.engineer](https://linga.engineer)',
   'GitHub: [github.linga.engineer](https://github.linga.engineer)',
+  'LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)',
   'LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)',
   'Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)',
   'Email: [contact@linga.engineer](mailto:contact@linga.engineer)',
 ].join('\n');
 const currentFooterWithFourHyphens = currentFooter.replace(/^---/, '----');
+const currentFooterWithHardBreaks = currentFooter
+  .split('\n')
+  .map((line) => /^(Portfolio|GitHub|LinkedIn|LeetCode|Blogs|Email):/.test(line) && !line.endsWith('  ') ? `${line}  ` : line)
+  .join('\n');
 const ignoredDirectories = new Set(['.git', 'node_modules', 'dist', 'build']);
 
 function relativePath(filePath) {
@@ -82,7 +87,12 @@ function appendFooter(content) {
 }
 
 function replaceLegacyFooter(content) {
-  const footerCandidates = [legacyFooter, currentFooter, currentFooterWithFourHyphens];
+  const footerCandidates = [
+    legacyFooter,
+    currentFooter,
+    currentFooterWithFourHyphens,
+    currentFooterWithHardBreaks,
+  ];
 
   for (const lineEnding of ['\n', '\r\n']) {
     const footerWithLineEnding = footer.replaceAll('\n', lineEnding);

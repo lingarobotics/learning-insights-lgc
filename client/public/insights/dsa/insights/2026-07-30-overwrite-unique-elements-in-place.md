@@ -207,15 +207,15 @@ That small habit prevents many `ArrayIndexOutOfBoundsException`s before they eve
 - 📖 **LeetCode Problem:** https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 - 💻 **My Accepted Solution:** https://leetcode.com/problems/remove-duplicates-from-sorted-array/solutions/8431140/thinking-in-pattern-two-pointer-overwrit-p2xo/
 
------
+------
 
 ## Author
 
 **Ramalingam Jayavelu**
 
-Portfolio: [linga.engineer](https://linga.engineer)
-GitHub: [github.linga.engineer](https://github.linga.engineer)
-LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
-LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
-Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Portfolio: [linga.engineer](https://linga.engineer)  
+GitHub: [github.linga.engineer](https://github.linga.engineer)  
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)  
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)  
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)  
 Email: [contact@linga.engineer](mailto:contact@linga.engineer)

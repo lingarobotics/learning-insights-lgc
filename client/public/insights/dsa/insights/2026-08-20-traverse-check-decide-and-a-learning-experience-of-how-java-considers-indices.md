@@ -240,15 +240,15 @@ Sometimes I just need to translate my thinking correctly into the language I'm u
 
 - 💻 **My Accepted Submission:** https://leetcode.com/problems/distribute-elements-into-two-arrays-i/submissions/2113986594/
 
--------
+---------
 
 ## Author
 
 **Ramalingam Jayavelu**
 
-Portfolio: [linga.engineer](https://linga.engineer)
-GitHub: [github.linga.engineer](https://github.linga.engineer)
-LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
-LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
-Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Portfolio: [linga.engineer](https://linga.engineer)  
+GitHub: [github.linga.engineer](https://github.linga.engineer)  
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)  
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)  
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)  
 Email: [contact@linga.engineer](mailto:contact@linga.engineer)

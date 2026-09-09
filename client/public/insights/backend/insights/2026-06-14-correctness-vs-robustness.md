@@ -141,15 +141,15 @@ Reliable software comes from questioning assumptions, not just writing code.
 
 > Good engineering is not just about making software work. It is about making software continue working when reality refuses to cooperate.
 
------
+------
 
 ## Author
 
 **Ramalingam Jayavelu**
 
-Portfolio: [linga.engineer](https://linga.engineer)
-GitHub: [github.linga.engineer](https://github.linga.engineer)
-LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
-LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
-Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Portfolio: [linga.engineer](https://linga.engineer)  
+GitHub: [github.linga.engineer](https://github.linga.engineer)  
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)  
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)  
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)  
 Email: [contact@linga.engineer](mailto:contact@linga.engineer)

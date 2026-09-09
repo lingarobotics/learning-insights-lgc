@@ -913,15 +913,15 @@ And perhaps that's what I want to keep getting better at:
 
 * 🧮 **My Second Approach — Thinking Mathematically:** https://leetcode.com/problems/sign-of-the-product-of-an-array/solutions/8508215/thinking-mathematically-school-math-abou-ncm0/
 
------
+------
 
 ## Author
 
 **Ramalingam Jayavelu**
 
-Portfolio: [linga.engineer](https://linga.engineer)
-GitHub: [github.linga.engineer](https://github.linga.engineer)
-LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
-LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
-Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Portfolio: [linga.engineer](https://linga.engineer)  
+GitHub: [github.linga.engineer](https://github.linga.engineer)  
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)  
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)  
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)  
 Email: [contact@linga.engineer](mailto:contact@linga.engineer)

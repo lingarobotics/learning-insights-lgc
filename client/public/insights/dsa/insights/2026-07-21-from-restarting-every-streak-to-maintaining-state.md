@@ -201,15 +201,15 @@ there's often a better way.
 
 > Efficient algorithms often come from avoiding repeated computation, not from writing more complex code.
 
------
+------
 
 ## Author
 
 **Ramalingam Jayavelu**
 
-Portfolio: [linga.engineer](https://linga.engineer)
-GitHub: [github.linga.engineer](https://github.linga.engineer)
-LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
-LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
-Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Portfolio: [linga.engineer](https://linga.engineer)  
+GitHub: [github.linga.engineer](https://github.linga.engineer)  
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)  
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)  
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)  
 Email: [contact@linga.engineer](mailto:contact@linga.engineer)

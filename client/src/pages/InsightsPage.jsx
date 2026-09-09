@@ -65,7 +65,7 @@ function InsightsPage() {
   // Convert bare URLs to markdown links
   const linkifyBareUrls = (text) => {
     return text.replace(
-      /https?:\/\/[^\s\n]+/g,
+      /(?<!\]\()https?:\/\/[^\s\n]+/g,
       (url) => `[${url}](${url})`
     );
   };
@@ -201,7 +201,7 @@ function InsightsPage() {
                       </a>
                     ),
 
-                    img: ({ node, ...props }) => {
+                    img: (props) => {
                       let src = props.src || "";
 
                       if (!src.startsWith("/")) {
