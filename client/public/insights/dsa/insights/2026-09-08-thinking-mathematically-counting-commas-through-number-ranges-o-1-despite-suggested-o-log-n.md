@@ -825,10 +825,15 @@ It tells me that I am not only getting accepted solutions, but I am also becomin
 - [Count Commas in Range — Part I: Thinking Mathematically Instead of Counting](https://leetcode.com/problems/count-commas-in-range/solutions/8510425/thinking-mathematically-instead-of-count-wrvc/)
 - [Count Commas in Range II — My Part II Solution](https://leetcode.com/problems/count-commas-in-range-ii/solutions/8511545/thinking-mathematically-counting-commas-seywg/)
 
----
+-------
 
 ## Author
 
 **Ramalingam Jayavelu**
 
 Portfolio: [linga.engineer](https://linga.engineer)
+GitHub: [github.linga.engineer](https://github.linga.engineer)
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Email: [contact@linga.engineer](mailto:contact@linga.engineer)

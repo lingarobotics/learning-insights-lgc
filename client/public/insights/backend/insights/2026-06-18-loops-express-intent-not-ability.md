@@ -126,10 +126,15 @@ As software grows, choosing the right construct becomes as important as producin
 
 > Good engineering is not only about making code execute correctly—it is also about making the programmer's intent obvious to everyone who reads it later.
 
----
+-----
 
 ## Author
 
 **Ramalingam Jayavelu**
 
 Portfolio: [linga.engineer](https://linga.engineer)
+GitHub: [github.linga.engineer](https://github.linga.engineer)
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Email: [contact@linga.engineer](mailto:contact@linga.engineer)

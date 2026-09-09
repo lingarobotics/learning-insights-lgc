@@ -12,8 +12,36 @@ const footer = [
   '**Ramalingam Jayavelu**',
   '',
   'Portfolio: [linga.engineer](https://linga.engineer)',
+  'GitHub: [github.linga.engineer](https://github.linga.engineer)',
+  'LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)',
+  'LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)',
+  'Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)',
+  'Email: [contact@linga.engineer](mailto:contact@linga.engineer)',
   '',
 ].join('\n');
+const legacyFooter = [
+  '---',
+  '',
+  '## Author',
+  '',
+  '**Ramalingam Jayavelu**',
+  '',
+  'Portfolio: [linga.engineer](https://linga.engineer)',
+].join('\n');
+const currentFooter = [
+  '---',
+  '',
+  '## Author',
+  '',
+  '**Ramalingam Jayavelu**',
+  '',
+  'Portfolio: [linga.engineer](https://linga.engineer)',
+  'GitHub: [github.linga.engineer](https://github.linga.engineer)',
+  'LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)',
+  'Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)',
+  'Email: [contact@linga.engineer](mailto:contact@linga.engineer)',
+].join('\n');
+const currentFooterWithFourHyphens = currentFooter.replace(/^---/, '----');
 const ignoredDirectories = new Set(['.git', 'node_modules', 'dist', 'build']);
 
 function relativePath(filePath) {
@@ -53,6 +81,22 @@ function appendFooter(content) {
   return `${content}${separator}${footer}`;
 }
 
+function replaceLegacyFooter(content) {
+  const footerCandidates = [legacyFooter, currentFooter, currentFooterWithFourHyphens];
+
+  for (const lineEnding of ['\n', '\r\n']) {
+    const footerWithLineEnding = footer.replaceAll('\n', lineEnding);
+    for (const candidate of footerCandidates) {
+      const candidateWithLineEnding = candidate.replaceAll('\n', lineEnding);
+      if (content.endsWith(candidateWithLineEnding) || content.endsWith(`${candidateWithLineEnding}${lineEnding}`)) {
+        return `${content.slice(0, -candidateWithLineEnding.length)}${footerWithLineEnding}`;
+      }
+    }
+  }
+
+  return null;
+}
+
 function printSection(title, files) {
   console.log(`${title} (${files.length})`);
   for (const file of files) {
@@ -84,6 +128,12 @@ for (const filePath of markdownFiles) {
     duplicateAuthorFiles.push(file.path);
   }
 
+  const updatedContent = replaceLegacyFooter(content);
+  if (updatedContent !== null) {
+    filesToModify.push({ path: file.path, filePath, status: 'MODIFIED', content: updatedContent });
+    continue;
+  }
+
   if (authorSectionCount > 0) {
     skippedFiles.push({ path: file.path, status: 'SKIPPED' });
     continue;
@@ -107,6 +157,6 @@ for (const file of duplicateAuthorFiles) {
 if (!dryRun) {
   for (const file of filesToModify) {
     const content = fs.readFileSync(file.filePath, 'utf8');
-    fs.writeFileSync(file.filePath, appendFooter(content), 'utf8');
+    fs.writeFileSync(file.filePath, file.content ?? appendFooter(content), 'utf8');
   }
 }

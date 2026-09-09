@@ -138,10 +138,15 @@ As software grows, preserving data becomes more valuable than the initial comput
 
 > Good engineering often begins by asking not only how to process data, but whether that data should be preserved for future work.
 
----
+-----
 
 ## Author
 
 **Ramalingam Jayavelu**
 
 Portfolio: [linga.engineer](https://linga.engineer)
+GitHub: [github.linga.engineer](https://github.linga.engineer)
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Email: [contact@linga.engineer](mailto:contact@linga.engineer)

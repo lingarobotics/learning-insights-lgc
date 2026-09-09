@@ -196,10 +196,15 @@ The ability to question, reason, document, adapt, and understand systems is what
 
 Those habits are likely to remain valuable long after specific technologies have changed.
 
----
+-----
 
 ## Author
 
 **Ramalingam Jayavelu**
 
 Portfolio: [linga.engineer](https://linga.engineer)
+GitHub: [github.linga.engineer](https://github.linga.engineer)
+LinkedIn: [linkedin.linga.engineer](https://linkedin.linga.engineer)
+LeetCode: [leetcode.linga.engineer](https://leetcode.linga.engineer)
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+Email: [contact@linga.engineer](mailto:contact@linga.engineer)
