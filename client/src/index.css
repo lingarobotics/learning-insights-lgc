@@ -56,6 +56,14 @@ html {
   box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
 }
 
+.insight-card-date {
+  margin-bottom: 0.45rem;
+  color: #38bdf8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 /* ===== BUTTON ===== */
 .button {
   padding: 0.6rem 1.2rem;

@@ -131,6 +131,12 @@ function InsightsPage() {
                 className="card"
                 onClick={() => setSelected(item)}
               >
+                {formatDate(item.title) && (
+                  <div className="insight-card-date">
+                    {formatDate(item.title)}
+                  </div>
+                )}
+
                 <h3>
                   {formatTitle(item.title)}
                 </h3>
