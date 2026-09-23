@@ -1,0 +1,639 @@
+# DSA Insight — The Learning Behind the Solution
+
+---
+
+## 1. Context
+
+Today's problem was **Super Pow**.
+
+The task was to calculate:
+
+\[
+a^b \mod 1337
+\]
+
+where `a` is a positive integer and `b` is an extremely large positive integer represented as an array of digits.
+
+For example:
+
+```text
+a = 2
+b = [1, 0]
+```
+
+means:
+
+\[
+2^{10}
+\]
+
+The interesting constraint was that `b` can contain up to **2000 digits**.
+
+That means the exponent can be far larger than what Java's `int` or `long` can store.
+
+While solving this problem, I learned a few connected concepts around **modulo, modular arithmetic, exponent transformation, large-number handling, and integer overflow**.
+
+---
+
+## 2. My First Approach
+
+My first thought was straightforward:
+
+```text
+b = [1, 0]
+
+↓ convert the array into a number
+
+b = 10
+
+↓ calculate
+
+a^10
+
+↓ take % 1337
+```
+
+For example:
+
+```text
+a = 2
+b = [1, 0]
+
+2^10 = 1024
+
+1024 % 1337 = 1024
+```
+
+This approach is logically correct if `b` is a normal-sized number.
+
+The problem is the constraint.
+
+`b` can contain **up to 2000 digits**.
+
+So an exponent such as:
+
+```text
+999999999999999999999999999999...
+```
+
+cannot be stored in a normal Java `int` or `long`.
+
+Therefore, the challenge was:
+
+> **How can I calculate `a^b % 1337` without ever constructing the enormous value of `b`?**
+
+---
+
+## 3. New Learning — Understanding Modulo
+
+One of the small but important things I learned while solving this problem was a deeper understanding of the `%` operator.
+
+I already knew that `%` gives the remainder.
+
+But I started looking at it mathematically.
+
+For:
+
+\[
+a \% b
+\]
+
+we can think of it as:
+
+\[
+a - (b \times x)
+\]
+
+where `x` is the largest whole number such that:
+
+\[
+b \times x \leq a
+\]
+
+### Example 1
+
+```text
+200 % 150
+```
+
+The largest multiple of `150` that does not exceed `200` is:
+
+```text
+150 × 1 = 150
+```
+
+So:
+
+```text
+200 - 150 = 50
+```
+
+Therefore:
+
+```text
+200 % 150 = 50
+```
+
+### Example 2
+
+```text
+200 % 500
+```
+
+Here, `500` is larger than `200`.
+
+So `500` cannot be subtracted even once.
+
+Therefore:
+
+```text
+200 % 500 = 200
+```
+
+### Example 3
+
+```text
+1024 % 1337
+```
+
+Again, `1337` is larger than `1024`.
+
+So:
+
+```text
+1024 % 1337 = 1024
+```
+
+### Example 4
+
+```text
+200 % 100
+```
+
+Here:
+
+```text
+200 = 100 × 2 + 0
+```
+
+Therefore:
+
+```text
+200 % 100 = 0
+```
+
+So one useful rule I learned is:
+
+> **If `a < b`, then `a % b = a`.**
+
+In general:
+
+\[
+a \% b =
+a - \left(b \times \left\lfloor\frac{a}{b}\right\rfloor\right)
+\]
+
+This was a small learning, but it became important for understanding why `% 1337` can repeatedly keep values small in this problem.
+
+---
+
+## 4. Why Modulo Helps in This Problem
+
+The actual problem asks for:
+
+\[
+a^b \mod 1337
+\]
+
+The value of:
+
+\[
+a^b
+\]
+
+can become unimaginably large.
+
+But we don't actually need the complete value.
+
+We only need its **remainder when divided by 1337**.
+
+So instead of allowing the intermediate values to grow indefinitely, we can repeatedly reduce them using:
+
+```text
+% 1337
+```
+
+This allows us to work with relatively small values while preserving the remainder we ultimately care about.
+
+For multiplication, we can use the modular property:
+
+\[
+(a \times b) \% m
+=
+((a \% m) \times (b \% m)) \% m
+\]
+
+This means we can reduce values before multiplying instead of waiting until the numbers become huge.
+
+That idea became particularly important later when dealing with Java's integer limits.
+
+---
+
+## 5. Handling the Extremely Large Exponent
+
+Now the main problem remained:
+
+> How do we calculate `a^b` when `b` has potentially 2000 digits?
+
+Suppose:
+
+```text
+b = [1, 2, 3]
+```
+
+This represents:
+
+```text
+123
+```
+
+If we were converting it normally, we would build it as:
+
+```text
+1
+
+1 × 10 + 2 = 12
+
+12 × 10 + 3 = 123
+```
+
+So whenever we receive a new digit `d`, the new exponent is:
+
+\[
+newExponent = oldExponent \times 10 + d
+\]
+
+Now look at the power:
+
+\[
+a^{oldExponent \times 10 + d}
+\]
+
+Using the rules of exponents:
+
+\[
+a^{oldExponent \times 10 + d}
+=
+a^{oldExponent \times 10} \times a^d
+\]
+
+and:
+
+\[
+a^{oldExponent \times 10}
+=
+(a^{oldExponent})^{10}
+\]
+
+Therefore:
+
+\[
+a^{oldExponent \times 10 + d}
+=
+(a^{oldExponent})^{10} \times a^d
+\]
+
+This gives the key transformation:
+
+```text
+result = result^10 × a^digit
+```
+
+So instead of constructing the entire exponent, we process the digits one at a time.
+
+---
+
+## 6. Applying the Transformation
+
+Suppose:
+
+```text
+a = 2
+b = [1, 0]
+```
+
+We want:
+
+\[
+2^{10}
+\]
+
+Start with:
+
+```text
+result = 1
+```
+
+### First digit: `1`
+
+The new exponent is:
+
+```text
+0 × 10 + 1 = 1
+```
+
+So:
+
+```text
+result = 1^10 × 2^1
+       = 2
+```
+
+### Second digit: `0`
+
+The new exponent is:
+
+```text
+1 × 10 + 0 = 10
+```
+
+So:
+
+```text
+result = 2^10 × 2^0
+       = 1024 × 1
+       = 1024
+```
+
+Finally:
+
+```text
+1024 % 1337 = 1024
+```
+
+So we successfully calculated the required result without constructing the large exponent directly.
+
+---
+
+## 7. The Implementation
+
+The main logic became:
+
+```java
+int result = 1;
+
+for (int digit : b) {
+    result = (power(result, 10) * power(a, digit)) % 1337;
+}
+```
+
+The important part is:
+
+```text
+result^10 × a^digit
+```
+
+because that comes directly from the exponent transformation.
+
+The digit is always between `0` and `9`, so `power(a, digit)` only requires a small number of multiplications.
+
+---
+
+## 8. The Power Helper
+
+I used a simple repeated multiplication approach:
+
+```java
+private int power(int a, int n) {
+    int result = 1;
+
+    while (n > 0) {
+        result = (result * a) % 1337;
+        n--;
+    }
+
+    return result;
+}
+```
+
+For example:
+
+```text
+power(2, 3)
+
+result = 1
+
+1 × 2 = 2
+2 × 2 = 4
+4 × 2 = 8
+
+return 8
+```
+
+The important part is that `% 1337` is applied after every multiplication.
+
+We never need to let the intermediate result grow unnecessarily.
+
+---
+
+## 9. An Important Bug I Encountered — Integer Overflow
+
+My first implementation did not pass all the test cases.
+
+One failing case was:
+
+```text
+a = 2147483647
+b = [2, 0, 0]
+```
+
+The problem was **integer overflow**.
+
+I was doing multiplication like:
+
+```java
+result * a
+```
+
+Even though I was eventually applying:
+
+```text
+% 1337
+```
+
+the multiplication happens **before** the modulo operation.
+
+So if the multiplication itself exceeds the range of Java's `int`, the value can overflow before `% 1337` gets a chance to reduce it.
+
+This was an important distinction to understand.
+
+It is not enough to say:
+
+```text
+"I use % later, so the number cannot become large."
+```
+
+The multiplication must first be performed, and that multiplication itself can overflow.
+
+---
+
+## 10. Fixing the Overflow
+
+Since we only care about the value modulo `1337`, we can reduce `a` immediately:
+
+```java
+a %= MOD;
+```
+
+Now `a` is guaranteed to be smaller than `1337`.
+
+So the multiplication inside `power()` stays small enough for an `int`.
+
+The final accepted solution became:
+
+```java
+class Solution {
+    private static final int MOD = 1337;
+
+    public int superPow(int a, int[] b) {
+        a %= MOD;
+
+        int result = 1;
+
+        for (int digit : b) {
+            result = (power(result, 10) * power(a, digit)) % MOD;
+        }
+
+        return result;
+    }
+
+    private int power(int a, int n) {
+        int result = 1;
+
+        while (n > 0) {
+            result = (result * a) % MOD;
+            n--;
+        }
+
+        return result;
+    }
+}
+```
+
+![My Solution](/images/images-from-learning/super-pow-sol.png)
+
+---
+
+## 11. Why This Matters
+
+This problem connected several ideas that I had previously seen separately:
+
+- `%` and remainders
+- Modular arithmetic
+- Exponent rules
+- Processing a number digit by digit
+- Handling numbers larger than Java's primitive integer types
+- Integer overflow
+- Keeping intermediate values small
+
+The important part was not just knowing each concept.
+
+It was understanding how they can work together.
+
+My initial idea was:
+
+```text
+array
+  ↓
+number
+  ↓
+a^b
+  ↓
+% 1337
+```
+
+The constraint made the first step impossible.
+
+So instead of abandoning the original idea, I adapted it:
+
+```text
+array
+  ↓
+process one digit at a time
+  ↓
+transform the exponent
+  ↓
+calculate the equivalent modular result
+```
+
+---
+
+## 12. The Real Learning
+
+The biggest takeaway from this problem was:
+
+> **When an obvious approach fails because of a constraint, don't immediately throw away the entire idea. Find exactly which part of the approach is causing the problem and adapt the pattern around that constraint.**
+
+My original thinking of:
+
+```text
+array → number → a^b → modulo
+```
+
+was not mathematically wrong.
+
+The problem was that the exponent could contain **2000 digits**.
+
+So I learned how to preserve the same underlying idea without ever constructing that enormous number.
+
+This fits the way I am trying to approach DSA:
+
+> **What pattern or tool do I already have in my toolbox that can help with this problem?**
+
+And if the pattern does not fit exactly:
+
+> **Can I adapt or modify it for this problem?**
+
+Here, the useful tools were:
+
+```text
+Modulo
++
+Exponent rules
++
+Digit-by-digit processing
++
+Modular multiplication
+```
+
+---
+
+## 13. Takeaway
+
+> I started this problem thinking about simply converting the digit array into a number.
+
+> Then I learned more deeply what modulo actually represents and why values can be reduced using `% 1337`.
+
+> The constraint forced me to move from "calculate the huge number" to "calculate what the huge number would produce modulo 1337."
+
+> I also encountered a real Java issue with integer overflow and learned that applying `%` after a multiplication does not prevent the multiplication itself from overflowing.
+
+**Sometimes the solution isn't about calculating the huge value. It's about finding a way to never calculate it at all.**
+
+---
+
+## Author
+
+**Ramalingam Jayavelu**
+
+Portfolio: [linga.engineer](https://linga.engineer)
+
+GitHub: [github.linga.engineer](https://github.com/lingarobotics)
+
+LinkedIn: [linkedin.linga.engineer](https://linkedin.com/in/linga-robotics-conceptual-learner)
+
+LeetCode: [leetcode.linga.engineer](https://leetcode.com/lingarobotics)
+
+Blogs: [blogs.linga.engineer](https://blogs.linga.engineer)
+
+Email: [contact@linga.engineer](mailto:contact@linga.engineer)
