@@ -114,7 +114,7 @@ This was my first time specifically using **BlueJ** for an object-oriented progr
 
 The screenshot shows both sides of this implementation: the LinkedIn Learning challenge on one side and my completed Java implementation in BlueJ on the other.
 
-![Java OOP challenge completed in BlueJ](images/images-from-learning.oop-challenge-java-with-linkedin-learning-interface-in-side.png)
+![Java OOP challenge completed in BlueJ](images/images-from-learning/oop-challenge-java-with-linkedin-learning-interface-in-side.png)
 
 ---
 
