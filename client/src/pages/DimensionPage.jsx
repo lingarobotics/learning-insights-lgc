@@ -26,30 +26,28 @@ const dimensionInfo = {
       "Frontend engineering is not just building interfaces—it is understanding how users experience systems through them.",
   },
 
-  backend: {
-    title: "Backend",
-    desc: "Learn how systems process requests, coordinate services, and manage business logic.",
-
+  programmingSoftwareEngineering: {
+    title: "Programming & Software Engineering",
+    desc: "Understand programming concepts, software design, correctness, debugging, and engineering reasoning.",
     focus: [
-      "API flow understanding",
-      "Server-side system behavior",
-      "Request-response lifecycle",
-      "Data flow between layers",
-      "System architecture reasoning",
+      "Programming concepts and mental models",
+      "Code behavior and execution",
+      "Software design and structure",
+      "Correctness and robustness",
+      "Debugging and problem solving",
     ],
-
+    
     expectations: [
-      "Backend debugging insights",
-      "Server-side architectural thinking",
-      "Data handling observations",
-      "Real-world API behavior",
-      "Scalability-oriented understanding",
+      "Programming insights",
+      "Design and implementation reasoning",
+      "Debugging observations",
+      "Code correctness and trade-offs",
+      "Software engineering principles",
     ],
-
+    
     mindset:
-      "Backend engineering is understanding how systems coordinate logic, data, and execution beyond individual APIs.",
+      "Software engineering is not just writing code; it is understanding behavior, making design decisions, reasoning about correctness, and learning from failures.",
   },
-
   dsa: {
     title: "Data Structures & Algorithms",
     desc: "Develop problem-solving intuition through patterns, efficiency, and trade-offs.",

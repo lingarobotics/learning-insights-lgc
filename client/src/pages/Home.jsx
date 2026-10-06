@@ -24,7 +24,7 @@ function Home() {
             </h1>
 
             <p className="landing-version">
-              12 Dimensions • 60+ Insights • Engineering Realizations
+              12 Dimensions • 90+ Insights • Engineering Realizations
             </p>
 
             <p className="landing-sub">

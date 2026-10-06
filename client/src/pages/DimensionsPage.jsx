@@ -10,9 +10,9 @@ function DimensionsPage() {
       desc: "Understand how user interfaces behave, communicate, and evolve beyond implementation.",
     },
     {
-      name: "backend",
-      label: "Backend",
-      desc: "Learn how systems process requests, coordinate services, and manage business logic.",
+      name: "programming-software-engineering",
+      label: "Programming & Software Engineering",
+      desc: "Understand programming concepts, software design, correctness, debugging, and engineering reasoning.",
     },
     {
       name: "dsa",
