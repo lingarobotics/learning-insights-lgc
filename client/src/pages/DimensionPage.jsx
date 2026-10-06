@@ -26,7 +26,7 @@ const dimensionInfo = {
       "Frontend engineering is not just building interfaces—it is understanding how users experience systems through them.",
   },
 
-  programmingSoftwareEngineering: {
+  "programming-software-engineering": {
     title: "Programming & Software Engineering",
     desc: "Understand programming concepts, software design, correctness, debugging, and engineering reasoning.",
     focus: [
