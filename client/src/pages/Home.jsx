@@ -28,7 +28,7 @@ function Home() {
             </p>
 
             <p className="landing-sub">
-              A curated collection of 60+ engineering insights
+              A curated collection of 90+ engineering insights
               discovered while learning computer science,
               building software systems, debugging failures,
               and understanding why modern systems are designed
